@@ -1,22 +1,16 @@
 
-from pathlib import Path
 
-from ditupy.api.dash import DashManifest
+from ditupy.ditu import DituClient
 
-path= r"D:\github Leo\caracoltv-dl\ditu\representaions\club_publicidad_1753884747679_1.xml"
+client = DituClient()
 
-xml_text= Path(path).read_text(encoding="utf-8")
-manifest = DashManifest(xml_text, source_url="https://varnish.../file.mpd")
+# 1. Buscar canal
+canal = client.find_channel("desafio")
 
-# El mejor video del primer periodo
-period = manifest.get_periods()[0]
-video_set = period.get_adaptation_sets(type_filter="video")[0]
-best_rep = video_set.get_best_representation()
+programa_actual = client.get_current_live_program(canal["channelId"])
+print(f"Viendo: {programa_actual.title}")
 
-if not best_rep:
-    raise ValueError("No se encontró representación de video.")
+# 3. Obtener URL para grabar
+manifest_url = client.get_manifest_url(canal["channelId"])
 
-print(best_rep.initialization_url)
-print(best_rep.codecs)
-for url in best_rep.get_segments():
-    print(url)
+print(f"Manifest URL: {manifest_url}")
