@@ -1,7 +1,9 @@
 from datetime import datetime, timedelta
 
 from pydantic import BaseModel
+from unidecode import unidecode
 
+from ..utils import normalize_windows_name
 
 
 class CurrentSchedule(BaseModel):
@@ -52,7 +54,10 @@ class SimpleSchedule(BaseModel):
     season: int
 
     channel_info: dict
-
+    @property
+    def title_slug(self) -> str:
+        normalized= normalize_windows_name(self.title)
+        return unidecode(normalized).lower().replace(" ", "_")
     @property
     def content_id(self) -> int:
         return self.contentId
