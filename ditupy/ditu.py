@@ -1,10 +1,11 @@
 import logging
 from datetime import datetime, timedelta
-from typing import List, Tuple
+from typing import Iterator, List, Tuple
 
 import requests
 from unidecode import unidecode
 
+from ditupy.schemas.catalog import CatalogItem
 from ditupy.schemas.common import ChannelInfo
 from ditupy.schemas.dashmanifest_response import DashManifestResponse
 from ditupy.schemas.raw_schedule_response import RawTVScheduleResponse
@@ -12,32 +13,35 @@ from ditupy.schemas.simple_schedule import CurrentSchedule, SimpleSchedule
 
 logger = logging.getLogger(__name__)
 
+
 class DituClient:
     """
     Cliente para interactuar con la API de Ditu/Caracol.
     Maneja la sesión HTTP, headers y la lógica de extracción de datos.
     """
-    
+
     BASE_URL = "https://varnish-prod.avscaracoltv.com/AGL/1.6/A/ENG/ANDROID/ALL"
-    
+
     def __init__(self):
         self.session = requests.Session()
-        self.session.headers.update({
-            "Restful": "yes",
-            "Accept-Encoding": "gzip, deflate, br",
-            "User-Agent": "okhttp/4.12.0",
-        })
+        self.session.headers.update(
+            {
+                "Restful": "yes",
+                "Accept-Encoding": "gzip, deflate, br",
+                "User-Agent": "okhttp/4.12.0",
+            }
+        )
 
     def _get_day_range_timestamps(self) -> Tuple[int, int]:
         """Calcula timestamps start/end para el día actual."""
         now = datetime.now()
         start_dt = datetime(now.year, now.month, now.day)
-        end_dt = start_dt + timedelta(hours=27) # Cubre hasta las 3AM del día siguiente
+        end_dt = start_dt + timedelta(hours=27)  # Cubre hasta las 3AM del día siguiente
         return int(start_dt.timestamp() * 1000), int(end_dt.timestamp() * 1000)
 
     def _fetch_epg_raw(self) -> RawTVScheduleResponse:
         """
-        Obtiene el JSON crudo de la EPG. 
+        Obtiene el JSON crudo de la EPG.
         Esta es la fuente de verdad tanto para canales como para horarios.
         """
         start, end = self._get_day_range_timestamps()
@@ -55,22 +59,21 @@ class DituClient:
     def get_channels(self) -> List[ChannelInfo]:
         """Extrae la lista de canales únicos desde la EPG."""
         raw_data = self._fetch_epg_raw()
-        channels_map = {} # Usamos dict para evitar duplicados por ID
+        channels_map = {}  # Usamos dict para evitar duplicados por ID
 
         for container in raw_data.get("resultObj", {}).get("containers", []):
             items = container.get("containers", [])
-            if not items: 
+            if not items:
                 continue
-                
+
             # El primer item suele tener la info del canal correcta
             first_item = items[0]
             if "channel" in first_item:
                 ch = first_item["channel"]
                 channels_map[ch["channelId"]] = ChannelInfo(
-                    channelId=ch["channelId"],
-                    channelName=ch["channelName"]
+                    channelId=ch["channelId"], channelName=ch["channelName"]
                 )
-        
+
         return list(channels_map.values())
 
     def find_channel(self, query: str) -> ChannelInfo:
@@ -90,14 +93,14 @@ class DituClient:
             items = channel_cont.get("containers", [])
             if not items:
                 continue
-            
+
             first_ch_info = items[0].get("channel", {})
             if first_ch_info.get("channelId") != channel_id:
                 continue
 
             for item in items:
-                schedules.append(self._parse_program_item(item)) # type: ignore
-        
+                schedules.append(self._parse_program_item(item))  # type: ignore
+
         return schedules
 
     def get_current_live_program(self, channel_id: int) -> CurrentSchedule:
@@ -109,7 +112,7 @@ class DituClient:
         }
         resp = self.session.get(url, params=params)
         resp.raise_for_status()
-        
+
         data = resp.json()
         try:
             item = data["resultObj"]["containers"][0]
@@ -129,16 +132,14 @@ class DituClient:
         except (IndexError, KeyError):
             raise ValueError(f"No hay información en vivo para el canal {channel_id}")
 
-
     def get_manifest_url(self, channel_id: int) -> str:
         """Obtiene la URL del MPD para ver en vivo."""
         url = f"{self.BASE_URL}/CONTENT/VIDEOURL/LIVE/{channel_id}/10"
         resp = self.session.get(url)
         resp.raise_for_status()
-        
+
         data: DashManifestResponse = resp.json()
         return data["resultObj"]["src"]
-
 
     def _parse_program_item(self, item: dict) -> SimpleSchedule:
         """Convierte el item crudo al Schema SimpleSchedule."""
@@ -156,3 +157,52 @@ class DituClient:
             season=meta["season"],
             channel_info=item["channel"],
         )
+
+    def get_catalog_iterator(self) -> Iterator[CatalogItem]:
+        """
+        Iterador perezoso (Lazy) del catálogo.
+        """
+        page_url = f"{self.BASE_URL}/PAGE/402"
+        logger.info(f"Obteniendo página principal del catálogo: {page_url}")
+
+        resp = self.session.get(page_url)
+        resp.raise_for_status()
+        page_data = resp.json()
+
+        containers: List[dict] = page_data.get("resultObj", {}).get("containers", [])
+
+        for tray in containers:
+            tray_id = tray.get("id")
+            uri = tray.get("retrieveItems", {}).get("uri")  # '/TRAY/EXTCOLLECTION/491'
+            if not uri:
+                continue
+
+            # TODO: implementar la pagina de filtrado de catálogo
+            # layout = tray.get("layout")
+
+            collection_url = f"{self.BASE_URL}{uri}"
+            try:
+                col_resp = self.session.get(collection_url)
+                col_resp.raise_for_status()
+                col_data = col_resp.json()
+            except Exception as e:
+                logger.error(f"Error obteniendo colección {tray_id}: {e}")
+                continue
+
+            items = col_data.get("resultObj", {}).get("containers", [])
+
+            for item in items:
+                meta = item.get("metadata", {})
+                catalog_item = CatalogItem(
+                    contentId=meta.get("contentId"),
+                    title=meta.get("title"),
+                    description=meta.get("longDescription")
+                    or meta.get("shortDescription"),
+                    duration=meta.get("duration"),
+                    episodeId=meta.get("episodeId"),
+                    episodeTitle=meta.get("episodeTitle"),
+                    season=meta.get("season"),
+                    source_collection_id=str(tray_id),
+                )
+
+                yield catalog_item
