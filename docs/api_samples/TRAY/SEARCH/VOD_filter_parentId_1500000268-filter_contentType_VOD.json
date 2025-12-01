@@ -1,0 +1,2687 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 34,
+    "containers": [
+      {
+        "id": "1000012168",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012168",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012168,
+          "contentType": "VOD",
+          "longDescription": "A Mahinur le revelan que Bade no es su hija",
+          "year": "2025",
+          "contractStartDate": 1759964642000,
+          "contractEndDate": 1791500640000,
+          "externalId": "CATCH68e6e13ac85181ecd1742694",
+          "title": "Hilos de Vida",
+          "duration": 3708,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "08-Oct 2025",
+          "episodeNumber": 1,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68e6e13ac85181ecd1742694",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 85874,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012183",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012183",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012183,
+          "contentType": "VOD",
+          "longDescription": "Aras confirma con una prueba que Derin no es su hija",
+          "year": "2025",
+          "contractStartDate": 1760051164000,
+          "contractEndDate": 1791587160000,
+          "externalId": "CATCH68e82b744a962fe151669aa9",
+          "title": "Hilos de Vida",
+          "duration": 3264,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "09-Oct 2025",
+          "episodeNumber": 2,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68e82b744a962fe151669aa9",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 86157,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012280",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012280",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012280,
+          "contentType": "VOD",
+          "longDescription": "Mahinur se entera de que Derin es su hija y enfrenta a Aras",
+          "year": "2025",
+          "contractStartDate": 1760137444000,
+          "contractEndDate": 1791673440000,
+          "externalId": "CATCH68e9835c012f00d4b877a06d",
+          "title": "Hilos de Vida",
+          "duration": 2630,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "10-Oct 2025",
+          "episodeNumber": 3,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68e9835c012f00d4b877a06d",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 86876,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012329",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012329",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012329,
+          "contentType": "VOD",
+          "longDescription": "Kenan intenta poner en contra a Aras y Mahinur, mientras Bade lucha por su vida.",
+          "year": "2025",
+          "contractStartDate": 1760483043000,
+          "contractEndDate": 1792019040000,
+          "externalId": "CATCH68eec66eef3128b9a732118d",
+          "title": "Hilos de Vida",
+          "duration": 2674,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "14-Oct 2025",
+          "episodeNumber": 4,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68eec66eef3128b9a732118d",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 87243,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012354",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012354",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012354,
+          "contentType": "VOD",
+          "longDescription": "Aras piensa en pedirle la mano a Mahinur pese a que piensa que es una mentirosa por culpa de Kenan.",
+          "year": "2025",
+          "contractStartDate": 1760568489000,
+          "contractEndDate": 1792104480000,
+          "externalId": "CATCH68f02434630dab021366dd4d",
+          "title": "Hilos de Vida",
+          "duration": 1147,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "15-Oct 2025",
+          "episodeNumber": 5,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68f02434630dab021366dd4d",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 87493,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012370",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012370",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012370,
+          "contentType": "VOD",
+          "longDescription": "Aras presenta a Mahinur a su familia, pero no es muy bien recibida.",
+          "year": "2025",
+          "contractStartDate": 1760658010000,
+          "contractEndDate": 1792194000000,
+          "externalId": "CATCH68f15ba7311f30e7e2af8d62",
+          "title": "Hilos de Vida",
+          "duration": 2563,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "16-Oct 2025",
+          "episodeNumber": 6,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68f15ba7311f30e7e2af8d62",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 87868,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012385",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012385",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012385,
+          "contentType": "VOD",
+          "longDescription": "La mamá de Aras descubre que Mahinur está casada",
+          "year": "2025",
+          "contractStartDate": 1760742245000,
+          "contractEndDate": 1792278240000,
+          "externalId": "CATCH68f2aff7d747a60329d42674",
+          "title": "Hilos de Vida",
+          "duration": 2563,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "17-Oct 2025",
+          "episodeNumber": 7,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68f2aff7d747a60329d42674",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Romance",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 88026,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012410",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012410",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012410,
+          "contentType": "VOD",
+          "longDescription": "Kenan se niega a firmar el divorcio con Mahinur y Aras interviene",
+          "year": "2025",
+          "contractStartDate": 1761001444000,
+          "contractEndDate": 1792537440000,
+          "externalId": "CATCH68f6ae6bb7daa1c9d1868e11",
+          "title": "Hilos de Vida",
+          "duration": 2566,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "20-Oct 2025",
+          "episodeNumber": 8,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68f6ae6bb7daa1c9d1868e11",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 88201,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012427",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012427",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012427,
+          "contentType": "VOD",
+          "longDescription": "En plena boda de Mahinur y Aras, Derin se pierde",
+          "year": "2025",
+          "contractStartDate": 1761088205000,
+          "contractEndDate": 1792624200000,
+          "externalId": "CATCH68f7fb563886486308e97736",
+          "title": "Hilos de Vida",
+          "duration": 2579,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "21-Oct 2025",
+          "episodeNumber": 9,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68f7fb563886486308e97736",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 88323,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012443",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012443",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012443,
+          "contentType": "VOD",
+          "longDescription": "Aras y Mahiur logran casarse luego de encontrar a Derin",
+          "year": "2025",
+          "contractStartDate": 1761174367000,
+          "contractEndDate": 1792710360000,
+          "externalId": "CATCH68f9526fb798160e1fdcfc8d",
+          "title": "Hilos de Vida",
+          "duration": 2575,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "22-Oct 2025",
+          "episodeNumber": 10,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68f9526fb798160e1fdcfc8d",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 88437,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012709",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012709",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012709,
+          "contentType": "VOD",
+          "longDescription": "Aras ayuda por última vez a Kenan para que se aleje de su familia",
+          "year": "2025",
+          "contractStartDate": 1761260644000,
+          "contractEndDate": 1792796640000,
+          "externalId": "CATCH68faaaa67799e90e5c170eb9",
+          "title": "Hilos de Vida",
+          "duration": 2578,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "23-Oct 2025",
+          "episodeNumber": 11,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68faaaa67799e90e5c170eb9",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 90386,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012727",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012727",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012727,
+          "contentType": "VOD",
+          "longDescription": "Aras y Mahinur tienen noche especial con sus hijas",
+          "year": "2025",
+          "contractStartDate": 1761346204000,
+          "contractEndDate": 1792882200000,
+          "externalId": "CATCH68fc020fe9744a0a6c5eb443",
+          "title": "Hilos de Vida",
+          "duration": 1980,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "24-Oct 2024",
+          "episodeNumber": 12,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68fc020fe9744a0a6c5eb443",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 90679,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012747",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012747",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012747,
+          "contentType": "VOD",
+          "longDescription": "Aras y Mahinur deben convencer al mundo que su amor es real. Kenan desaparece y su paradero es alarmante.",
+          "year": "2025",
+          "contractStartDate": 1761606964000,
+          "contractEndDate": 1793142960000,
+          "externalId": "CATCH68ffe8203179aa6318057141",
+          "title": "Hilos de Vida",
+          "duration": 2574,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "27-Oct 2025",
+          "episodeNumber": 13,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/68ffe8203179aa6318057141",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup",
+            "Drama",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 90824,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012965",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012965",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012965,
+          "contentType": "VOD",
+          "longDescription": "Se descubre que Kenan está secuestrado y buscan implicados en el caso.",
+          "year": "2025",
+          "contractStartDate": 1761691444000,
+          "contractEndDate": 1793227440000,
+          "externalId": "CATCH6901466cb0876c423db041ec",
+          "title": "Hilos de Vida",
+          "duration": 1203,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "28-Oct 2025",
+          "episodeNumber": 14,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6901466cb0876c423db041ec",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Romance",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 92364,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012979",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012979",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012979,
+          "contentType": "VOD",
+          "longDescription": "Aras enfrenta a Mahinur cansado de sus aparentes mentiras, pero ella no entiende de lo que habla.",
+          "year": "2025",
+          "contractStartDate": 1761779040000,
+          "contractEndDate": 1793315040000,
+          "externalId": "CATCH69028df5125bee57561b80ea",
+          "title": "Hilos de Vida",
+          "duration": 2579,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "29-Oct 2025",
+          "episodeNumber": 15,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/69028df5125bee57561b80ea",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Romance",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 92464,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012992",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012992",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012992,
+          "contentType": "VOD",
+          "longDescription": "Mahinur va en busca de Kenan. Aras la persigue a escondidas y descubre una verdad que lo deja perplejo.",
+          "year": "2025",
+          "contractStartDate": 1761866043000,
+          "contractEndDate": 1793402040000,
+          "externalId": "CATCH6903df5c532e560e8904a908",
+          "title": "Hilos de Vida",
+          "duration": 2573,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "30-Oct 2025",
+          "episodeNumber": 16,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6903df5c532e560e8904a908",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Romance",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 92560,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013009",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013009",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013009,
+          "contentType": "VOD",
+          "longDescription": "Aras confronta a Kenan, pero hay problemas en casa.",
+          "year": "2025",
+          "contractStartDate": 1761951720000,
+          "contractEndDate": 1793487720000,
+          "externalId": "CATCH69052fdcd6a7a20e4a20e824",
+          "title": "Hilos de Vida",
+          "duration": 2581,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "31-Oct 2025",
+          "episodeNumber": 17,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/69052fdcd6a7a20e4a20e824",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup",
+            "Drama",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 92697,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013034",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013034",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013034,
+          "contentType": "VOD",
+          "longDescription": "Mahinur discute con Aras y sus hijas tratan de solucionarlo",
+          "year": "2025",
+          "contractStartDate": 1762298643000,
+          "contractEndDate": 1793834640000,
+          "externalId": "CATCH690a8aa99945fc3c551332a4",
+          "title": "Hilos de Vida",
+          "duration": 1871,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "04-Nov 2025",
+          "episodeNumber": 18,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690a8aa99945fc3c551332a4",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 92874,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013053",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013053",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013053,
+          "contentType": "VOD",
+          "longDescription": "Mamá de Aras estalla al saber secreto de Mahinur",
+          "year": "2025",
+          "contractStartDate": 1762385283000,
+          "contractEndDate": 1793921280000,
+          "externalId": "CATCH690bdcf3384f894bdf0bb73e",
+          "title": "Hilos de Vida",
+          "duration": 1863,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "05-Nov 2025",
+          "episodeNumber": 19,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690bdcf3384f894bdf0bb73e",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 93314,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013268",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013268",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013268,
+          "contentType": "VOD",
+          "longDescription": "Kenan visita a Mahinur en casa, pero ella le cuenta a Aras",
+          "year": "2025",
+          "contractStartDate": 1762472173000,
+          "contractEndDate": 1793921760000,
+          "externalId": "CATCH690d307c0ae3dfa90be25702",
+          "title": "Hilos de Vida",
+          "duration": 1860,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "06-Nov 2025",
+          "episodeNumber": 20,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690d307c0ae3dfa90be25702",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 95944,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013277",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013277",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013277,
+          "contentType": "VOD",
+          "longDescription": "Mamá de Aras corrió a Mahinur de su casa y el hombre se enfada",
+          "year": "2025",
+          "contractStartDate": 1762557603000,
+          "contractEndDate": 1794093600000,
+          "externalId": "CATCH690e7e32529341e825b35b7e",
+          "title": "Hilos de Vida",
+          "duration": 1862,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "07-Nov 2025",
+          "episodeNumber": 21,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690e7e32529341e825b35b7e",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 96297,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013305",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013305",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013305,
+          "contentType": "VOD",
+          "longDescription": "Aras debe dormir en el carro tras discusión con Mahinur.",
+          "year": "2025",
+          "contractStartDate": 1762818003000,
+          "contractEndDate": 1794354000000,
+          "externalId": "CATCH6912770f0ae3dfa90bd9f99a",
+          "title": "Hilos de Vida",
+          "duration": 1870,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "10-Nov 2025",
+          "episodeNumber": 22,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6912770f0ae3dfa90bd9f99a",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 103558,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013326",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013326",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013326,
+          "contentType": "VOD",
+          "longDescription": "Aras es traicionado por su propio primo.",
+          "year": "2025",
+          "contractStartDate": 1762903204000,
+          "contractEndDate": 1794439200000,
+          "externalId": "CATCH6913c4090ae3dfa90bec0e12",
+          "title": "Hilos de Vida",
+          "duration": 1875,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "11-Nov 2025",
+          "episodeNumber": 23,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6913c4090ae3dfa90bec0e12",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 109463,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013345",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013345",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013345,
+          "contentType": "VOD",
+          "longDescription": "Aras le prueba a Mahinur que no es un \"ladrón de niños\".",
+          "year": "2025",
+          "contractStartDate": 1762989602000,
+          "contractEndDate": 1794525600000,
+          "externalId": "CATCH69151557e996bca8e830f238",
+          "title": "Hilos de Vida",
+          "duration": 1873,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "12-Nov 2025",
+          "episodeNumber": 24,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/69151557e996bca8e830f238",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 120798,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013359",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013359",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013359,
+          "contentType": "VOD",
+          "longDescription": "Derin y Bade salen de casa, pero Mahinur cree que Kenan las secuestró.",
+          "year": "2025",
+          "contractStartDate": 1763077323000,
+          "contractEndDate": 1794613320000,
+          "externalId": "CATCH69166af2c453b0620e89bee0",
+          "title": "Hilos de Vida",
+          "duration": 1868,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "13-Nov 2025",
+          "episodeNumber": 25,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/69166af2c453b0620e89bee0",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 120956,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013373",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013373",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013373,
+          "contentType": "VOD",
+          "longDescription": "Kenan planea volverse amigo de Aras, para luego pedirle favores y dinero.",
+          "year": "2025",
+          "contractStartDate": 1763162882000,
+          "contractEndDate": 1794698880000,
+          "externalId": "CATCH6917b99a1bc6780461a80746",
+          "title": "Hilos de Vida",
+          "duration": 1883,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "14-Nov 2025",
+          "episodeNumber": 26,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6917b99a1bc6780461a80746",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 128667,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013439",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013439",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013439,
+          "contentType": "VOD",
+          "longDescription": "Kenan llama a Bade tras el incidente, manipula a la niña y busca ganarse la confianza de Aras para usarlo en el futuro.",
+          "year": "2025",
+          "contractStartDate": 1763511484000,
+          "contractEndDate": 1795047480000,
+          "externalId": "CATCH691d0b9cc1089d5d6dc4f23d",
+          "title": "Hilos de Vida",
+          "duration": 2600,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "18-Nov 2025",
+          "episodeNumber": 27,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691d0b9cc1089d5d6dc4f23d",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 148093,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013457",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013457",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013457,
+          "contentType": "VOD",
+          "longDescription": "Mahinur le confiesa a Aras lo que iba a hacer con las joyas",
+          "year": "2025",
+          "contractStartDate": 1763595483000,
+          "contractEndDate": 1795131480000,
+          "externalId": "CATCH691e4fb6dcf37528fc77e8db",
+          "title": "Hilos de Vida",
+          "duration": 1688,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "19-Nov 2025",
+          "episodeNumber": 28,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691e4fb6dcf37528fc77e8db",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 157428,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013556",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013556",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013556,
+          "contentType": "VOD",
+          "longDescription": "Mahinur y Aras descubren que sus hijas fueron intercambiadas al nacer; madre, verdad y amor frente al caos familiar.",
+          "year": "2025",
+          "contractStartDate": 1763681051000,
+          "contractEndDate": 1795217040000,
+          "externalId": "CATCH691fa25a5ac95d286ca576e3",
+          "title": "Hilos de Vida",
+          "duration": 1512,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "20-Nov 2025",
+          "episodeNumber": 29,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691fa25a5ac95d286ca576e3",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 175287,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013579",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013579",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013579,
+          "contentType": "VOD",
+          "longDescription": "Mahinur tiene que ir al hospital de urgencia.",
+          "year": "2025",
+          "contractStartDate": 1763767323000,
+          "contractEndDate": 1795303320000,
+          "externalId": "CATCH6920f2e6028cb2050cad703d",
+          "title": "Hilos de Vida",
+          "duration": 1515,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "21-Nov 2025",
+          "episodeNumber": 30,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6920f2e6028cb2050cad703d",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 176047,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013878",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013878",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013878,
+          "contentType": "VOD",
+          "longDescription": "Aras encuentra a un donante para Bade, pero hay malas noticias.",
+          "year": "2025",
+          "contractStartDate": 1764030963000,
+          "contractEndDate": 1795566960000,
+          "externalId": "CATCH6924f7c0391937ac21c55690",
+          "title": "Hilos de Vida",
+          "duration": 2969,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "24-Nov 2025",
+          "episodeNumber": 31,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6924f7c0391937ac21c55690",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 179413,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014029",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014029",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014029,
+          "contentType": "VOD",
+          "longDescription": "Mahinur lamenta que Aras no diga nada del embarazo.",
+          "year": "2025",
+          "contractStartDate": 1764116643000,
+          "contractEndDate": 1795652640000,
+          "externalId": "CATCH6926471c391937ac218de53a",
+          "title": "Hilos de Vida",
+          "duration": 2797,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "25-Nov 2025",
+          "episodeNumber": 32,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6926471c391937ac218de53a",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 181123,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014050",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014050",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014050,
+          "contentType": "VOD",
+          "longDescription": "Aras le comenta a Mahinur que Bade sanará, pero ¿hay algo más que hablar?",
+          "year": "2025",
+          "contractStartDate": 1764202443000,
+          "contractEndDate": 1795738440000,
+          "externalId": "CATCH692794ec6bfbc6af1272ea16",
+          "title": "Hilos de Vida",
+          "duration": 2800,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "26-Nov 2025",
+          "episodeNumber": 33,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/692794ec6bfbc6af1272ea16",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 181365,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014124",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014124",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014124,
+          "contentType": "VOD",
+          "longDescription": "El secreto de Aras y Mahinur podría salir a la luz.",
+          "year": "2025",
+          "contractStartDate": 1764288243000,
+          "contractEndDate": 1795824240000,
+          "externalId": "CATCH6928e5af75fe762313be8ffa",
+          "title": "Hilos de Vida",
+          "duration": 1888,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "27-Nov 2025",
+          "episodeNumber": 34,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6928e5af75fe762313be8ffa",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000268,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 182171,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764596597943
+}

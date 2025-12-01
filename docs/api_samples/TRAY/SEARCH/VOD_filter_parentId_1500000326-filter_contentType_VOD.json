@@ -1,0 +1,1294 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 16,
+    "containers": [
+      {
+        "id": "1000013202",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013202",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013202,
+          "contentType": "VOD",
+          "longDescription": "Paulina acepta la propuesta de Paola tras difícil situación económica",
+          "year": "2025",
+          "contractStartDate": 1762364283000,
+          "contractEndDate": 1764956280000,
+          "externalId": "CATCH690b7fe19fe76b9d9ff0fcbc",
+          "title": "La Usurpadora",
+          "duration": 3432,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "05-Nov 2025",
+          "episodeNumber": 1,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690b7fe19fe76b9d9ff0fcbc",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 94626,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013261",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013261",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013261,
+          "contentType": "VOD",
+          "longDescription": "Paulina empieza su vida como Paola y conoce a Carlos Daniel",
+          "year": "2025",
+          "contractStartDate": 1762472642000,
+          "contractEndDate": 1764978240000,
+          "externalId": "CATCH690cc77416881ca800d369bb",
+          "title": "La Usurpadora",
+          "duration": 3141,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "06-Nov 2025",
+          "episodeNumber": 2,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690cc77416881ca800d369bb",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 95866,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013302",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013302",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013302,
+          "contentType": "VOD",
+          "longDescription": "Carlos Daniel empieza a sospechar de que Paola ya no es la misma.",
+          "year": "2025",
+          "contractStartDate": 1762815844000,
+          "contractEndDate": 1765407840000,
+          "externalId": "CATCH691215e6ccabb4e848fdfcd3",
+          "title": "La Usurpadora",
+          "duration": 2310,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "10-Nov 2025",
+          "episodeNumber": 3,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691215e6ccabb4e848fdfcd3",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 103530,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013319",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013319",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013319,
+          "contentType": "VOD",
+          "longDescription": "Paulina descubre que un grave secreto y Paola se accidenta.",
+          "year": "2025",
+          "contractStartDate": 1762893962000,
+          "contractEndDate": 1765485960000,
+          "externalId": "CATCH69135eeb49ba87470a3efc99",
+          "title": "La Usurpadora",
+          "duration": 2343,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "11-Nov 2025",
+          "episodeNumber": 4,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/69135eeb49ba87470a3efc99",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 109384,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013336",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013336",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013336,
+          "contentType": "VOD",
+          "longDescription": "Carlos Daniel amenaza a Paola con divorciarse",
+          "year": "2025",
+          "contractStartDate": 1762968616000,
+          "contractEndDate": 1765474200000,
+          "externalId": "CATCH6914abfeb8fb9ae6fb83068a",
+          "title": "La Usurpadora",
+          "duration": 2363,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "12-Nov 2025",
+          "episodeNumber": 5,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6914abfeb8fb9ae6fb83068a",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 120698,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013355",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013355",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013355,
+          "contentType": "VOD",
+          "longDescription": "Paulina destruye la prueba de infidelidad de Paola.",
+          "year": "2025",
+          "contractStartDate": 1763055122000,
+          "contractEndDate": 1765647120000,
+          "externalId": "CATCH6916158fc829ff041958a01c",
+          "title": "La Usurpadora",
+          "duration": 2348,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "13-Nov 2025",
+          "episodeNumber": 6,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6916158fc829ff041958a01c",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 120910,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013369",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013369",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013369,
+          "contentType": "VOD",
+          "longDescription": "Paulina recibe una llamada en la que insinúan que está suplantando a Paola.",
+          "year": "2025",
+          "contractStartDate": 1763142123000,
+          "contractEndDate": 1765734120000,
+          "externalId": "CATCH6917670b4b12d3c1a20ee763",
+          "title": "La Usurpadora",
+          "duration": 2307,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "14-Nov 2025",
+          "episodeNumber": 7,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6917670b4b12d3c1a20ee763",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 128059,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013435",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013435",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013435,
+          "contentType": "VOD",
+          "longDescription": "Carlos Daniel le confiesa a Paulina que durmió en casa de Gema",
+          "year": "2025",
+          "contractStartDate": 1763496363000,
+          "contractEndDate": 1766088360000,
+          "externalId": "CATCH691ccfc0e999aef024ed3e79",
+          "title": "La Usurpadora",
+          "duration": 2539,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "18-Nov 2025",
+          "episodeNumber": 8,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691ccfc0e999aef024ed3e79",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 148039,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013455",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013455",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013455,
+          "contentType": "VOD",
+          "longDescription": "Carlos Daniel piensa en divorciarse de Paulina y discute con ella.",
+          "year": "2025",
+          "contractStartDate": 1763573524000,
+          "contractEndDate": 1766165520000,
+          "externalId": "CATCH691dfe7dd859c733351613b1",
+          "title": "La Usurpadora",
+          "duration": 2255,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "19-Nov 2025",
+          "episodeNumber": 9,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691dfe7dd859c733351613b1",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 154886,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013506",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013506",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013506,
+          "contentType": "VOD",
+          "longDescription": "Luciano se reúne con Paulina y él le hace creer que Paola murió.",
+          "year": "2025",
+          "contractStartDate": 1763660044000,
+          "contractEndDate": 1766252040000,
+          "externalId": "CATCH691f50676e374dfac40b67b8",
+          "title": "La Usurpadora",
+          "duration": 2262,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "20-Nov 2025",
+          "episodeNumber": 10,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/691f50676e374dfac40b67b8",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 175235,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013569",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013569",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013569,
+          "contentType": "VOD",
+          "longDescription": "Carlos Daniel encuentra foto que compromete a Paulina, pero Lalita la salva.",
+          "year": "2025",
+          "contractStartDate": 1763746323000,
+          "contractEndDate": 1766338320000,
+          "externalId": "CATCH6920a19d028cb2050ca1837b",
+          "title": "La Usurpadora",
+          "duration": 2284,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "21-Nov 2025",
+          "episodeNumber": 11,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6920a19d028cb2050ca1837b",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 175960,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013870",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013870",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013870,
+          "contentType": "VOD",
+          "longDescription": "Carlos Daniel se molesta con Paulina por sus intentos de salvar la fábrica.",
+          "year": "2025",
+          "contractStartDate": 1764005523000,
+          "contractEndDate": 1766597520000,
+          "externalId": "CATCH6924961986513027e12bd7e9",
+          "title": "La Usurpadora",
+          "duration": 2229,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "24-Nov 2025",
+          "episodeNumber": 12,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6924961986513027e12bd7e9",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 179228,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014024",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014024",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014024,
+          "contentType": "VOD",
+          "longDescription": "Paulina discute con Carlos Daniel por el préstamo de Douglas.",
+          "year": "2025",
+          "contractStartDate": 1764091923000,
+          "contractEndDate": 1766683920000,
+          "externalId": "CATCH6925e7873f62693c1b751d02",
+          "title": "La Usurpadora",
+          "duration": 2297,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "25-Nov 2025",
+          "episodeNumber": 13,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6925e7873f62693c1b751d02",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 181068,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014044",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014044",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014044,
+          "contentType": "VOD",
+          "longDescription": "Paulina se hará cargo de la fábrica, pero Estefanía planea sabotearla.",
+          "year": "2025",
+          "contractStartDate": 1764178443000,
+          "contractEndDate": 1766770440000,
+          "externalId": "CATCH6927395ae0921dd8806d6210",
+          "title": "La Usurpadora",
+          "duration": 2186,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "26-Nov 2025",
+          "episodeNumber": 14,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6927395ae0921dd8806d6210",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 181291,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014110",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014110",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014110,
+          "contentType": "VOD",
+          "longDescription": "Paulina ya no puede ocultar lo mucho que le incomoda Gema.",
+          "year": "2025",
+          "contractStartDate": 1764264723000,
+          "contractEndDate": 1766856720000,
+          "externalId": "CATCH69288a63208cc53d770a1d89",
+          "title": "La Usurpadora",
+          "duration": 2342,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "27-Nov 2025",
+          "episodeNumber": 15,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/69288a63208cc53d770a1d89",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 182026,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000014146",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000014146",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000014146,
+          "contentType": "VOD",
+          "longDescription": "Paola planea viajar a Acapulco para poder vigilar a Paulina.",
+          "year": "2025",
+          "contractStartDate": 1764351123000,
+          "contractEndDate": 1766943120000,
+          "externalId": "CATCH6929dbf05d42bcb384c0c81a",
+          "title": "La Usurpadora",
+          "duration": 2259,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "28-Nov 2025",
+          "episodeNumber": 16,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/6929dbf05d42bcb384c0c81a",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000326,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 182497,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764597361597
+}

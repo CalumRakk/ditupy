@@ -1,17 +1,17 @@
 import logging
 from datetime import datetime, timedelta
-from typing import Iterator, List, Tuple
+from typing import List, Tuple
 
 import requests
 from unidecode import unidecode
 
 from ditupy.schemas.bundle_item import BundleItem
-from ditupy.schemas.catalog import CatalogItem
 from ditupy.schemas.collection import Collection
 from ditupy.schemas.common import ChannelInfo
 from ditupy.schemas.dashmanifest_response import DashManifestResponse
 from ditupy.schemas.raw_schedule_response import RawTVScheduleResponse
 from ditupy.schemas.simple_schedule import CurrentSchedule, SimpleSchedule
+from docs.requests.utils import save_api_response
 
 logger = logging.getLogger(__name__)
 
@@ -160,59 +160,59 @@ class DituClient:
             channel_info=item["channel"],
         )
 
-    def get_catalog_iterator(self) -> Iterator[CatalogItem]:
-        """
-        Iterador perezoso (Lazy) del catálogo.
-        """
-        page_url = f"{self.BASE_URL}/PAGE/402"
-        logger.info(f"Obteniendo página principal del catálogo: {page_url}")
+    # def get_catalog_iterator(self) -> Iterator[CatalogItem]:
+    #     """
+    #     Iterador perezoso (Lazy) del catálogo.
+    #     """
+    #     page_url = f"{self.BASE_URL}/PAGE/402"
+    #     logger.info(f"Obteniendo página principal del catálogo: {page_url}")
 
-        resp = self.session.get(page_url)
-        resp.raise_for_status()
-        page_data = resp.json()
+    #     resp = self.session.get(page_url)
+    #     resp.raise_for_status()
+    #     page_data = resp.json()
 
-        containers: List[dict] = page_data.get("resultObj", {}).get("containers", [])
+    #     containers: List[dict] = page_data.get("resultObj", {}).get("containers", [])
 
-        for tray in containers:
-            tray_id = tray.get("id")
-            uri = tray.get("retrieveItems", {}).get("uri")  # '/TRAY/EXTCOLLECTION/491'
-            if not uri:
-                continue
+    #     for tray in containers:
+    #         tray_id = tray.get("id")
+    #         uri = tray.get("retrieveItems", {}).get("uri")  # '/TRAY/EXTCOLLECTION/491'
+    #         if not uri:
+    #             continue
 
-            # TODO: implementar la pagina de filtrado de catálogo
-            # layout = tray.get("layout")
+    #         # TODO: implementar la pagina de filtrado de catálogo
+    #         # layout = tray.get("layout")
 
-            collection_url = f"{self.BASE_URL}{uri}"
-            try:
-                col_resp = self.session.get(collection_url)
-                col_resp.raise_for_status()
-                col_data = col_resp.json()
-            except Exception as e:
-                logger.error(f"Error obteniendo colección {tray_id}: {e}")
-                continue
+    #         collection_url = f"{self.BASE_URL}{uri}"
+    #         try:
+    #             col_resp = self.session.get(collection_url)
+    #             col_resp.raise_for_status()
+    #             col_data = col_resp.json()
+    #         except Exception as e:
+    #             logger.error(f"Error obteniendo colección {tray_id}: {e}")
+    #             continue
 
-            items = col_data.get("resultObj", {}).get("containers", [])
+    #         items = col_data.get("resultObj", {}).get("containers", [])
 
-            for item in items:
-                meta = item.get("metadata", {})
-                uri = item.get("retrieveItems", {}).get("uri", "")
-                if not uri:
-                    raise ValueError(f"Item sin URI en colección {tray_id}")
+    #         for item in items:
+    #             meta = item.get("metadata", {})
+    #             uri = item.get("retrieveItems", {}).get("uri", "")
+    #             if not uri:
+    #                 raise ValueError(f"Item sin URI en colección {tray_id}")
 
-                catalog_item = CatalogItem(
-                    contentId=meta.get("contentId"),
-                    title=meta.get("title"),
-                    description=meta.get("longDescription")
-                    or meta.get("shortDescription"),
-                    duration=meta.get("duration"),
-                    episodeId=meta.get("episodeId"),
-                    episodeTitle=meta.get("episodeTitle"),
-                    season=meta.get("season"),
-                    source_collection_id=str(tray_id),
-                    uri=uri,
-                )
+    #             catalog_item = CatalogItem(
+    #                 contentId=meta.get("contentId"),
+    #                 title=meta.get("title"),
+    #                 description=meta.get("longDescription")
+    #                 or meta.get("shortDescription"),
+    #                 duration=meta.get("duration"),
+    #                 episodeId=meta.get("episodeId"),
+    #                 episodeTitle=meta.get("episodeTitle"),
+    #                 season=meta.get("season"),
+    #                 source_collection_id=str(tray_id),
+    #                 uri=uri,
+    #             )
 
-                yield catalog_item
+    #             yield catalog_item
 
     def get_collections(self) -> List[Collection]:
         """
@@ -232,7 +232,7 @@ class DituClient:
         """
         Obtiene los episodios de una colección específica por su ID.
         """
-        uri = collection.retrieveItems.uri
+        uri = collection.retrieveItems.uri  # '/TRAY/EXTCOLLECTION/491.json'
         collection_url = f"{self.BASE_URL}{uri}"
         resp = self.session.get(collection_url)
 
@@ -252,3 +252,19 @@ class DituClient:
             )
             collections.append(BundleItem(**item))
         return collections
+
+    def get_item(self, item: BundleItem) -> dict:
+        """
+        Obtiene el detalle completo de un ítem específico.
+        """
+        if item.retrieveItems:
+            uri = item.retrieveItems.uri  # '/CONTENT/DETAIL/BUNDLE/1500000269.json'
+            item_url = f"{self.BASE_URL}{uri}"
+        else:
+            uri = item.actions[0].uri  # '/PAGE/DETAILS/VOD/1000008821.json'
+            item_url = f"{self.BASE_URL}{uri}"
+
+        resp = self.session.get(item_url)
+        save_api_response(item_url, resp.json())
+        resp.raise_for_status()
+        return resp.json()

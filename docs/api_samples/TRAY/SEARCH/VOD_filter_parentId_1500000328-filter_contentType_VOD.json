@@ -1,0 +1,92 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 1,
+    "containers": [
+      {
+        "id": "1000013288",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013288",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013288,
+          "contentType": "VOD",
+          "longDescription": "El cine colombiano brilló en los Macondo 2025, con “Estimados señores” como gran ganadora en una gala histórica en Medellín.",
+          "year": "2025",
+          "contractStartDate": 1762641243000,
+          "contractEndDate": 1767414840000,
+          "externalId": "CATCH690fc0d4e996bca8e8f607bb",
+          "title": "Premios Macondo 2025",
+          "duration": 11411,
+          "contentSubtype": "EPISODE",
+          "episodeTitle": "Premios Macondo 2025",
+          "episodeNumber": 1,
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/690fc0d4e996bca8e8f607bb",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "genres": [
+            "Cine",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1500000328,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000066,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 96544,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764597445197
+}

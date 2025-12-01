@@ -1,4 +1,4 @@
-from typing import Literal, Optional
+from typing import List, Literal, Optional
 
 from pydantic import BaseModel
 
@@ -30,4 +30,5 @@ class BundleItem(BaseModel):
     id: str
     layout: Literal["BUNDLE_ITEM", "CONTENT_ITEM"]
     retrieveItems: Optional[RetrieveItems] = None
+    actions: List[Action]
     metadata: Metadata

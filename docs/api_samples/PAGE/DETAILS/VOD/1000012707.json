@@ -1,0 +1,29 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 1,
+    "containers": [
+      {
+        "layout": "CONTENT_DETAIL",
+        "title": "Te busco",
+        "id": "516_37",
+        "hash": "17ee87f0a4cc3d28ab10c664eb798d93",
+        "metadata": {
+          "label": "Te busco",
+          "imageUrl": "",
+          "id": "516_37",
+          "hash": "17ee87f0a4cc3d28ab10c664eb798d93",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/CONTENT/DETAIL/VOD/1000012707",
+          "type": "REMOTE"
+        },
+        "actions": []
+      }
+    ]
+  },
+  "systemTime": 1764597445097
+}
