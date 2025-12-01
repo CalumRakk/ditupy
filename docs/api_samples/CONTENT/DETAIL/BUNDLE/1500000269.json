@@ -1,0 +1,576 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 1,
+    "containers": [
+      {
+        "id": "1500000269",
+        "layout": "BUNDLE_ITEM",
+        "metadata": {
+          "contentId": 1500000269,
+          "contentType": "BUNDLE",
+          "longDescription": "Desafío Siglo XXI está diseñado para revolucionar y llevar al límite a los 32 mejores competidores del país.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_558N2",
+          "title": "Desafío Siglo XXI - Capítulos de la Semana",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "popularity": {
+            "KPI": 1,
+            "Boost": 1
+          },
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_558",
+          "language": "SPA",
+          "season": 2025,
+          "isGeoBlocked": false,
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "actors": [
+            "No definido"
+          ],
+          "authors": [
+            "No definido"
+          ],
+          "directors": [
+            "No definido"
+          ],
+          "genres": [
+            "Aventura",
+            "Reality",
+            "Competencia",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "contentOptions": [],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "recentlyAdded": false,
+          "comingSoon": false,
+          "leavingSoon": false
+        },
+        "assets": [
+          {
+            "assetId": 85766,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ],
+        "parents": [
+          {
+            "parentId": 1700000057,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "containers": [
+          {
+            "id": "1000013885",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/PAGE/DETAILS/VOD/1000013885",
+                "targetType": "PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 1000013885,
+              "externalId": "CATCH69251b9dc9ddafab50002746",
+              "contentType": "VOD",
+              "contentSubtype": "EPISODE",
+              "title": "Desafío Siglo XXI - Capítulos de la Semana",
+              "longDescription": "En el Desafío Siglo XXI, Alpha, Neos y Gamma se exigen al máximo para esquivar los chalecos en este ciclo 18.",
+              "extendedMetadata": {
+                "vodDescriptionFormat": [
+                  "EPISODE_NUMBER",
+                  "EPISODE_NAME"
+                ],
+                "tagValue": "Reality"
+              },
+              "contractStartDate": 1764041535000,
+              "contractEndDate": 1764646320000,
+              "episodeTitle": "24-Nov 2025",
+              "episodeNumber": 98,
+              "year": 2025,
+              "genres": [
+                "Aventura",
+                "Reality",
+                "Catchup"
+              ],
+              "availableAlso": [
+                "ROKU",
+                "ANDROID_TABLET",
+                "WEB",
+                "FIRETV",
+                "IPAD",
+                "IOS",
+                "SAMSUNGTV",
+                "ANDROIDTV",
+                "LGTV",
+                "VIDAA"
+              ],
+              "season": 2025,
+              "pcLevel": 0,
+              "pcExtendedRatings": [
+                "AP"
+              ],
+              "duration": 4030,
+              "language": "SPA",
+              "pictureUrl": "catchup/69251b9dc9ddafab50002746",
+              "actors": [
+                "No definido"
+              ],
+              "authors": [
+                "No definido"
+              ],
+              "directors": [
+                "No definido"
+              ]
+            },
+            "assets": [
+              {
+                "assetId": 179491,
+                "assetName": "VOD_HD",
+                "assetType": "MASTER",
+                "videoType": "HD",
+                "audioLanguages": [
+                  {
+                    "audioId": 1,
+                    "audioLanguageName": "SPA",
+                    "isPreferred": false
+                  }
+                ]
+              }
+            ],
+            "parents": [
+              {
+                "parentId": 1500000269,
+                "parentType": "BUNDLE",
+                "parentSubType": "SEASON"
+              },
+              {
+                "parentId": 1700000057,
+                "parentType": "GROUP_OF_BUNDLES",
+                "parentSubType": "SERIE"
+              }
+            ]
+          },
+          {
+            "id": "1000014034",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/PAGE/DETAILS/VOD/1000014034",
+                "targetType": "PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 1000014034,
+              "externalId": "CATCH692670eae0921dd8805fab0e",
+              "contentType": "VOD",
+              "contentSubtype": "EPISODE",
+              "title": "Desafío Siglo XXI - Capítulos de la Semana",
+              "longDescription": "Andrea Serna anuncia la salida de Cristian y por ser su dupla, Mencho también deja el Desafío. Ambos se despiden entre lágrimas.",
+              "extendedMetadata": {
+                "vodDescriptionFormat": [
+                  "EPISODE_NUMBER",
+                  "EPISODE_NAME"
+                ],
+                "tagValue": "Reality"
+              },
+              "contractStartDate": 1764128043000,
+              "contractEndDate": 1764732840000,
+              "episodeTitle": "25-Nov 2025",
+              "episodeNumber": 99,
+              "year": 2025,
+              "genres": [
+                "Aventura",
+                "Reality",
+                "Catchup"
+              ],
+              "availableAlso": [
+                "ROKU",
+                "ANDROID_TABLET",
+                "WEB",
+                "FIRETV",
+                "IPAD",
+                "IOS",
+                "SAMSUNGTV",
+                "ANDROIDTV",
+                "LGTV",
+                "VIDAA"
+              ],
+              "season": 2025,
+              "pcLevel": 0,
+              "pcExtendedRatings": [
+                "AP"
+              ],
+              "duration": 3978,
+              "language": "SPA",
+              "pictureUrl": "catchup/692670eae0921dd8805fab0e",
+              "actors": [
+                "No definido"
+              ],
+              "authors": [
+                "No definido"
+              ],
+              "directors": [
+                "No definido"
+              ]
+            },
+            "assets": [
+              {
+                "assetId": 181176,
+                "assetName": "VOD_HD",
+                "assetType": "MASTER",
+                "videoType": "HD",
+                "audioLanguages": [
+                  {
+                    "audioId": 1,
+                    "audioLanguageName": "SPA",
+                    "isPreferred": false
+                  }
+                ]
+              }
+            ],
+            "parents": [
+              {
+                "parentId": 1500000269,
+                "parentType": "BUNDLE",
+                "parentSubType": "SEASON"
+              },
+              {
+                "parentId": 1700000057,
+                "parentType": "GROUP_OF_BUNDLES",
+                "parentSubType": "SERIE"
+              }
+            ]
+          },
+          {
+            "id": "1000014051",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/PAGE/DETAILS/VOD/1000014051",
+                "targetType": "PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 1000014051,
+              "externalId": "CATCH6927a7d9b4aed70e47f65437",
+              "contentType": "VOD",
+              "contentSubtype": "EPISODE",
+              "title": "Desafío Siglo XXI - Capítulos de la Semana",
+              "longDescription": "Incidente en la prueba y hay molestia por el chaleco.",
+              "extendedMetadata": {
+                "vodDescriptionFormat": [
+                  "EPISODE_NUMBER",
+                  "EPISODE_NAME"
+                ],
+                "tagValue": "Reality"
+              },
+              "contractStartDate": 1764211682000,
+              "contractEndDate": 1764816480000,
+              "episodeTitle": "26-Nov 2025",
+              "episodeNumber": 100,
+              "year": 2025,
+              "genres": [
+                "Aventura",
+                "Reality",
+                "Catchup"
+              ],
+              "availableAlso": [
+                "ROKU",
+                "ANDROID_TABLET",
+                "WEB",
+                "FIRETV",
+                "IPAD",
+                "IOS",
+                "SAMSUNGTV",
+                "ANDROIDTV",
+                "LGTV",
+                "VIDAA"
+              ],
+              "season": 2025,
+              "pcLevel": 0,
+              "pcExtendedRatings": [
+                "AP"
+              ],
+              "duration": 5344,
+              "language": "SPA",
+              "pictureUrl": "catchup/6927a7d9b4aed70e47f65437",
+              "actors": [
+                "No definido"
+              ],
+              "authors": [
+                "No definido"
+              ],
+              "directors": [
+                "No definido"
+              ]
+            },
+            "assets": [
+              {
+                "assetId": 181377,
+                "assetName": "VOD_HD",
+                "assetType": "MASTER",
+                "videoType": "HD",
+                "audioLanguages": [
+                  {
+                    "audioId": 1,
+                    "audioLanguageName": "SPA",
+                    "isPreferred": false
+                  }
+                ]
+              }
+            ],
+            "parents": [
+              {
+                "parentId": 1500000269,
+                "parentType": "BUNDLE",
+                "parentSubType": "SEASON"
+              },
+              {
+                "parentId": 1700000057,
+                "parentType": "GROUP_OF_BUNDLES",
+                "parentSubType": "SERIE"
+              }
+            ]
+          },
+          {
+            "id": "1000014127",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/PAGE/DETAILS/VOD/1000014127",
+                "targetType": "PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 1000014127,
+              "externalId": "CATCH69290be53a1a178ee301db51",
+              "contentType": "VOD",
+              "contentSubtype": "EPISODE",
+              "title": "Desafío Siglo XXI - Capítulos de la Semana",
+              "longDescription": "Alpha, Gamma y Neos se enfrentan en el Box Amarillo. Lina sale con paramédicos para revisión, ¿qué pasará?",
+              "extendedMetadata": {
+                "vodDescriptionFormat": [
+                  "EPISODE_NUMBER",
+                  "EPISODE_NAME"
+                ],
+                "tagValue": "Reality"
+              },
+              "contractStartDate": 1764298684000,
+              "contractEndDate": 1764903480000,
+              "episodeTitle": "27-Nov 2025",
+              "episodeNumber": 101,
+              "year": 2025,
+              "genres": [
+                "Aventura",
+                "Reality",
+                "Catchup"
+              ],
+              "availableAlso": [
+                "ROKU",
+                "ANDROID_TABLET",
+                "WEB",
+                "FIRETV",
+                "IPAD",
+                "IOS",
+                "SAMSUNGTV",
+                "ANDROIDTV",
+                "LGTV",
+                "VIDAA"
+              ],
+              "season": 2025,
+              "pcLevel": 0,
+              "pcExtendedRatings": [
+                "AP"
+              ],
+              "duration": 5081,
+              "language": "SPA",
+              "pictureUrl": "catchup/69290be53a1a178ee301db51",
+              "actors": [
+                "No definido"
+              ],
+              "authors": [
+                "No definido"
+              ],
+              "directors": [
+                "No definido"
+              ]
+            },
+            "assets": [
+              {
+                "assetId": 182211,
+                "assetName": "VOD_HD",
+                "assetType": "MASTER",
+                "videoType": "HD",
+                "audioLanguages": [
+                  {
+                    "audioId": 1,
+                    "audioLanguageName": "SPA",
+                    "isPreferred": false
+                  }
+                ]
+              }
+            ],
+            "parents": [
+              {
+                "parentId": 1500000269,
+                "parentType": "BUNDLE",
+                "parentSubType": "SEASON"
+              },
+              {
+                "parentId": 1700000057,
+                "parentType": "GROUP_OF_BUNDLES",
+                "parentSubType": "SERIE"
+              }
+            ]
+          },
+          {
+            "id": "1000014153",
+            "layout": "CONTENT_ITEM",
+            "actions": [
+              {
+                "key": "onClick",
+                "uri": "/PAGE/DETAILS/VOD/1000014153",
+                "targetType": "PAGE"
+              }
+            ],
+            "metadata": {
+              "contentId": 1000014153,
+              "externalId": "CATCH692a5c5f21561bf5db5a7d5b",
+              "contentType": "VOD",
+              "contentSubtype": "EPISODE",
+              "title": "Desafío Siglo XXI - Capítulos de la Semana",
+              "longDescription": "Alpha, Gamma y Neos se enfrentan en el Box Amarillo, mientras Lina es atendida por paramédicos. ¿Qué pasará en este capítulo?",
+              "extendedMetadata": {
+                "vodDescriptionFormat": [
+                  "EPISODE_NUMBER",
+                  "EPISODE_NAME"
+                ],
+                "tagValue": "Reality"
+              },
+              "contractStartDate": 1764384963000,
+              "contractEndDate": 1764903360000,
+              "episodeTitle": "28-Nov 2025",
+              "episodeNumber": 102,
+              "year": 2025,
+              "genres": [
+                "Aventura",
+                "Reality",
+                "Catchup"
+              ],
+              "availableAlso": [
+                "ROKU",
+                "ANDROID_TABLET",
+                "WEB",
+                "FIRETV",
+                "IPAD",
+                "IOS",
+                "SAMSUNGTV",
+                "ANDROIDTV",
+                "LGTV",
+                "VIDAA"
+              ],
+              "season": 2025,
+              "pcLevel": 0,
+              "pcExtendedRatings": [
+                "AP"
+              ],
+              "duration": 3998,
+              "language": "SPA",
+              "pictureUrl": "catchup/692a5c5f21561bf5db5a7d5b",
+              "actors": [
+                "No definido"
+              ],
+              "authors": [
+                "No definido"
+              ],
+              "directors": [
+                "No definido"
+              ]
+            },
+            "assets": [
+              {
+                "assetId": 182570,
+                "assetName": "VOD_HD",
+                "assetType": "MASTER",
+                "videoType": "HD",
+                "audioLanguages": [
+                  {
+                    "audioId": 1,
+                    "audioLanguageName": "SPA",
+                    "isPreferred": false
+                  }
+                ]
+              }
+            ],
+            "parents": [
+              {
+                "parentId": 1500000269,
+                "parentType": "BUNDLE",
+                "parentSubType": "SEASON"
+              },
+              {
+                "parentId": 1700000057,
+                "parentType": "GROUP_OF_BUNDLES",
+                "parentSubType": "SERIE"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764583341080
+}

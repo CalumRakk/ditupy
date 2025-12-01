@@ -1,9 +1,11 @@
 from ditupy.ditu import DituClient
+from ditupy.logging_config import setup_logging
+
+setup_logging()
 
 client = DituClient()
-
-for i, programa in enumerate(client.get_catalog_iterator()):
-    print(f"[{i}] {programa.title} (ID: {programa.contentId})")
-
-    if "Desafío" in programa.title:
-        print(f"¡ENCONTRADO! En colección {programa.source_collection_id}")
+for collection in client.get_collections():
+    print(f"Collection: {collection.layout}", collection.title)
+    items = client.get_collection(collection)
+    for item in items:
+        print("\t" + item.metadata.title)

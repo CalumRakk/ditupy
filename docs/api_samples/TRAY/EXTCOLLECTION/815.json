@@ -1,0 +1,1419 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 16,
+    "containers": [
+      {
+        "id": "1500000166",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000166",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000166&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000166,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009200000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2024,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009200000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 42318,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000165",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000165",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000165&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000165,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009190000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2023,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009190000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 42334,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000164",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000164",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000164&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000164,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009180000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2022,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009180000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 42342,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000107",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000107",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000107&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000107,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009170000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2021,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009170000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 700,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000103",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000103",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000103&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000103,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009160000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2019,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009160000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 25381,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000106",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000106",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000106&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000106,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009150000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2018,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009150000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 25377,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000102",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000102",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000102&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000102,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009140000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2017,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009140000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 22410,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000101",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000101",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000101&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000101,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009130000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2016,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009130000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 22438,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000087",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000087",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000087&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000087,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009120000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2015,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009120000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 583,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000086",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000086",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000086&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000086,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009110000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2014,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009110000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 18704,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000084",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000084",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000084&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000084,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009100000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2013,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009100000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 18288,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000092",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000092",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000092&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000092,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009090000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2012,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009090000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 20700,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000095",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000095",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000095&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000095,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009080000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2011,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009080000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 20675,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000059",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000059",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000059&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000059,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009070000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2010,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009070000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 12016,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000058",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000058",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000058&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000058,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009060000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2009,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009060000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 11993,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000057",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000057",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000057&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000057,
+          "contentType": "BUNDLE",
+          "longDescription": "El Desafío exitoso reality show colombiano producido por Caracol Televisión. Emitido desde el 2004, el programa lleva a un grupo de concursantes a enfrentar una serie de desafíos físicos y mentales en un entorno salvaje",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111009050000",
+          "title": "Desafío",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2008,
+          "starRating": 0,
+          "pictureUrl": "1009000000/1009050000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Competencia"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 410,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764586939766
+}

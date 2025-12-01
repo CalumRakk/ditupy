@@ -1,0 +1,693 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 8,
+    "containers": [
+      {
+        "id": "1500000237",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000237",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000237&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000237,
+          "contentType": "BUNDLE",
+          "longDescription": "En un cortijo lechero, Susana y Zoroastro viven una historia de amor única en esta serie de culto llena de humor y originalidad.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111102000000",
+          "title": "Leche",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1102000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Humor"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 1956,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000327",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000327",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000327&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000327,
+          "contentType": "BUNDLE",
+          "longDescription": "Intrigas, traiciones y un tesoro oculto en la Calavera arrastran a sus buscadores a un juego mortal sin vuelta atrás.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111166000000",
+          "title": "Calamar",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1166000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 2480,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000020",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000020",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000020&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000020,
+          "contentType": "BUNDLE",
+          "longDescription": "Nadie es Eterno en el Mundo narra la vida de Wendy, una mujer humilde que se enamora de un hombre poderoso. A medida que su amor crece, también lo hacen las amenazas y las traiciones en su entorno.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111006000000",
+          "title": "Nadie es eterno en el mundo",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1006000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Musical",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 3902,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000258",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000258",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000258&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000258,
+          "contentType": "BUNDLE",
+          "longDescription": "Alejo Durán busca el amor entre penas y vallenatos, marcado por su pasión por Rosita y la pérdida de su amigo Jaime.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111165000000",
+          "title": "Alejo, la búsqueda del amor",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1165000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Romance"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 58180,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000042",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000042",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000042&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000042,
+          "contentType": "BUNDLE",
+          "longDescription": "\"Mesa para Tres\" es una emotiva y cautivadora serie colombiana producida por Caracol Televisión, que narra la vida de tres hermanas, Andrea, Pilar y Juliana, tras la repentina y trágica muerte de sus padres. La serie está ambientada en un restaurante fami",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111015000000",
+          "title": "Mesa para tres",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1015000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "SX"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 6668,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000122",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000122",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000122&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000122,
+          "contentType": "BUNDLE",
+          "longDescription": "\"Gallito Ramírez\" narra la historia de un joven boxeador humilde que lucha por sus sueños y por el amor de la caprichosa Carmenza.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111056000000",
+          "title": "Gallito Ramirez",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1056000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 32885,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000099",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000099",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000099&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000099,
+          "contentType": "BUNDLE",
+          "longDescription": "Camila es una joven pediatra, quien queda embarazada de su novio Rafael. Es aquí cuando Serafín, el ángel guardián de la familia, y Luz Bella, una demonia, hacen una apuesta sobre el fin del matrimonio de estos personajes.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111042000000",
+          "title": "Tentaciones",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1042000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Comedia",
+            "Fantasía"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 22267,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000078",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000078",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000078&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000078,
+          "contentType": "BUNDLE",
+          "longDescription": "La novela \"Quieta Margarita\" sigue el viaje de sus protagonistas en busca de amor y autodescubrimiento, enfrentando obstáculos y revelaciones",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111034000000",
+          "title": "Quieta Margarita",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1034000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Musical",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 14147,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764587693293
+}

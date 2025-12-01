@@ -1,0 +1,347 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 4,
+    "containers": [
+      {
+        "id": "1500000174",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000174",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000174&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000174,
+          "contentType": "BUNDLE",
+          "longDescription": "Emitida por Caracol desde 1988, esta serie trajo los cuentos Grimm a la TV con emoción, valores y estilo inolvidable.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111128000000",
+          "title": "Cuentos de Los Hermanos Grimm",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1128000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Animación"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 44989,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000029",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000029",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000029&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000029,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Un grupo de niños y su amigo Dinodoro viven emocionantes aventuras llenas de humor, aprendizaje y diversión en Club 10.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111055000000",
+          "title": "Club 10",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "1055000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Fantasía"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Infantil"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 36223,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000008367",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000008367",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000008367,
+          "contentType": "VOD",
+          "longDescription": "Roberta y Fausto enfrentan secretos, sueños y peligros. Entre música, familia y un villano, sus destinos se cruzan inesperadamente.",
+          "year": "2025",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111129010001",
+          "title": "Roberta Quiere Cacao: Colección Especial",
+          "duration": 1122,
+          "contentSubtype": "MOVIE",
+          "episodeTitle": "Las aventuras de Roberta y Fausto",
+          "episodeNumber": 1,
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1129000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Familiar",
+            "Animación"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 45224,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000175",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000175",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000175&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000175,
+          "contentType": "BUNDLE",
+          "longDescription": "Pedro, Paula, Melody y Aurelio cantan y bailan en un show infantil lleno de ritmo, ternura, humor y mucha diversión.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111130000000",
+          "title": "Hits Caracol",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1130000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Familiar",
+            "Animación"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 45222,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764587628965
+}

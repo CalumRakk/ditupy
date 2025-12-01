@@ -1,0 +1,647 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 23,
+    "containers": [
+      {
+        "layout": "HIGHLIGHT",
+        "title": "Highlights",
+        "id": "402_26",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Highlights",
+          "imageUrl": "",
+          "id": "402_26",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "items_count": 10,
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_26/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/491",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/491",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Prime de Caracol TV ¡Corre que se van!",
+        "id": "402_149",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Prime de Caracol TV ¡Corre que se van!",
+          "imageUrl": "",
+          "id": "402_149",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_149/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2126",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2126",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Drama de Turquía a Colombia",
+        "id": "402_157",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Drama de Turquía a Colombia",
+          "imageUrl": "",
+          "id": "402_157",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2213",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2213",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Bumbox: Video Podcast",
+        "id": "402_187",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Bumbox: Video Podcast",
+          "imageUrl": "",
+          "id": "402_187",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "",
+          "schedule": [
+            {
+              "pubDays": "",
+              "pubStartDate": 1764507600,
+              "pubEndDate": "",
+              "pubStartTime": "",
+              "pubEndTime": ""
+            }
+          ]
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/3726",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/3726",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Tres grandes historias",
+        "id": "402_182",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Tres grandes historias",
+          "imageUrl": "",
+          "id": "402_182",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/3393",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/3393",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Desafío Siglo XXI: Contenido Exclusivo",
+        "id": "402_166",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Desafío Siglo XXI: Contenido Exclusivo",
+          "imageUrl": "",
+          "id": "402_166",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "items_count": 10,
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_166/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2441",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2441",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Espacios Exclusivos Desafío Siglo XXI",
+        "id": "402_173",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Espacios Exclusivos Desafío Siglo XXI",
+          "imageUrl": "",
+          "id": "402_173",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_173/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2544",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2544",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Top 10: Lo más visto",
+        "id": "402_66",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Top 10: Lo más visto",
+          "imageUrl": "",
+          "id": "402_66",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_66/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/1015",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/1015",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Encendiendo la fiesta 🎄🎶",
+        "id": "402_174",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Encendiendo la fiesta 🎄🎶",
+          "imageUrl": "",
+          "id": "402_174",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2582",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2582",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Novedades del Mes",
+        "id": "402_162",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Novedades del Mes",
+          "imageUrl": "",
+          "id": "402_162",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_162/background.png",
+          "schedule": [
+            {
+              "pubDays": "",
+              "pubStartDate": 1754348400,
+              "pubEndDate": "",
+              "pubStartTime": "",
+              "pubEndTime": ""
+            }
+          ]
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2338",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2338",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "De Desafío en Desafío",
+        "id": "402_50",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "De Desafío en Desafío",
+          "imageUrl": "",
+          "id": "402_50",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_50/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/815",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/815",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Llegó diciembre con su alegría 🎁🎉",
+        "id": "402_55",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Llegó diciembre con su alegría 🎁🎉",
+          "imageUrl": "",
+          "id": "402_55",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_55/background.png",
+          "schedule": [
+            {
+              "pubDays": "",
+              "pubStartDate": 1758236400,
+              "pubEndDate": "",
+              "pubStartTime": "",
+              "pubEndTime": ""
+            }
+          ]
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/832",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/832",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Series más populares",
+        "id": "402_179",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Series más populares",
+          "imageUrl": "",
+          "id": "402_179",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2948",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2948",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Dramas Recomendados",
+        "id": "402_183",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Dramas Recomendados",
+          "imageUrl": "",
+          "id": "402_183",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/3426",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/3426",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Ditu en modo retro",
+        "id": "402_54",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Ditu en modo retro",
+          "imageUrl": "",
+          "id": "402_54",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_54/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/828",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/828",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Tu Voz Estéreo: Historias Reales",
+        "id": "402_172",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Tu Voz Estéreo: Historias Reales",
+          "imageUrl": "",
+          "id": "402_172",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2539",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2539",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Cine país ¡Llega a Ditu!",
+        "id": "402_180",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Cine país ¡Llega a Ditu!",
+          "imageUrl": "",
+          "id": "402_180",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/3053",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/3053",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Ditu Documental",
+        "id": "402_177",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Ditu Documental",
+          "imageUrl": "",
+          "id": "402_177",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2692",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2692",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Caracol Sports: Lo más destacado",
+        "id": "402_178",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Caracol Sports: Lo más destacado",
+          "imageUrl": "",
+          "id": "402_178",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2752",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2752",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Luces, cámara… ¡SmartFilms!",
+        "id": "402_171",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Luces, cámara… ¡SmartFilms!",
+          "imageUrl": "",
+          "id": "402_171",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2508",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2508",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Vive en familia",
+        "id": "402_165",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Vive en familia",
+          "imageUrl": "",
+          "id": "402_165",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_165/background.png",
+          "schedule": [
+            {
+              "pubDays": "",
+              "pubStartDate": 1750431600,
+              "pubEndDate": "",
+              "pubStartTime": "",
+              "pubEndTime": ""
+            }
+          ]
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/2390",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/2390",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Vive al extremo",
+        "id": "402_125",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Vive al extremo",
+          "imageUrl": "",
+          "id": "402_125",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_125/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/1737",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/1737",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      },
+      {
+        "layout": "POSTER",
+        "title": "Yo me llamo: Ediciones inolvidables",
+        "id": "402_42",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e",
+        "metadata": {
+          "label": "Yo me llamo: Ediciones inolvidables",
+          "imageUrl": "",
+          "id": "402_42",
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "tray_background": "http://movies-has-new.avs-accenture.com/cms_msdemo/tray_bg/402_42/background.png"
+        },
+        "retrieveItems": {
+          "uri": "/TRAY/EXTCOLLECTION/735",
+          "type": "REMOTE"
+        },
+        "actions": [
+          {
+            "key": "onTitleClick",
+            "uri": "/TRAY/EXTCOLLECTION/735",
+            "targetType": "WALL_PAGE",
+            "type": "REMOTE",
+            "layout": "grid"
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764515766061
+}

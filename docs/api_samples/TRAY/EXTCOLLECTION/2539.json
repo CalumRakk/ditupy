@@ -1,0 +1,347 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 4,
+    "containers": [
+      {
+        "id": "1500000168",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000168",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000168&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000168,
+          "contentType": "BUNDLE",
+          "longDescription": "Andrea y Sebastián abren los micrófonos de Tu Voz Estéreo para dar voz a historias reales que tocan el alma.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111126010000",
+          "title": "Tu voz estéreo",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 4,
+          "starRating": 0,
+          "pictureUrl": "1058000000/1126010000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Serie"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 44300,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000167",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000167",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000167&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000167,
+          "contentType": "BUNDLE",
+          "longDescription": "Andrea y Sebastián abren los micrófonos de Tu Voz Estéreo para dar voz a historias reales que tocan el alma.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111125010000",
+          "title": "Tu voz estéreo",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 3,
+          "starRating": 0,
+          "pictureUrl": "1058000000/1125010000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Serie"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 1555,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000171",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000171",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000171&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000171,
+          "contentType": "BUNDLE",
+          "longDescription": "Andrea y Sebastián abren los micrófonos de Tu Voz Estéreo para dar voz a historias reales que tocan el alma.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111124010000",
+          "title": "Tu voz estéreo",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 2,
+          "starRating": 0,
+          "pictureUrl": "1058000000/1124010000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Serie"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 44291,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000170",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000170",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000170&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000170,
+          "contentType": "BUNDLE",
+          "longDescription": "Andrea y Sebastián abren los micrófonos de Tu Voz Estéreo para dar voz a historias reales que tocan el alma.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111058010000",
+          "title": "Tu voz estéreo",
+          "duration": 0,
+          "contentSubtype": "SOAP_OPERA",
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1058000000/1058010000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Serie"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 44280,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764587212164
+}

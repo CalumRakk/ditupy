@@ -1,0 +1,884 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 9,
+    "containers": [
+      {
+        "id": "1500000091",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000091",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000091&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000091,
+          "contentType": "BUNDLE",
+          "longDescription": "Imitadores deslumbran al jurado con voces impactantes y actuaciones épicas. Amparo, Pipe y César deciden quién sigue.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014090000",
+          "title": "Yo me Llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2023,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014090000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 18772,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000082",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000082",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000082&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000082,
+          "contentType": "BUNDLE",
+          "longDescription": "Voces potentes y actuaciones memorables hacen vibrar el escenario. Amparo, César y Yeison Jiménez ponen la vara alta.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014080000",
+          "title": "Yo me llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2021,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014080000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 16473,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000081",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000081",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000081&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000081,
+          "contentType": "BUNDLE",
+          "longDescription": "Los imitadores más talentosos se enfrentan en el escenario. Amparo, César y Jessi Uribe llevan la tensión al máximo.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014070000",
+          "title": "Yo me llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2019,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014070000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 14252,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000080",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000080",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000080&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000080,
+          "contentType": "BUNDLE",
+          "longDescription": "Voces impresionantes y una competencia feroz en busca del mejor imitador. Amparo, Pipe y César no dejan pasar nada.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014060000",
+          "title": "Yo me llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2018,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014060000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 14225,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000079",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000079",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000079&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000079,
+          "contentType": "BUNDLE",
+          "longDescription": "Imitadores deslumbran al jurado con voces impactantes y actuaciones épicas. Amparo, Pipe y César deciden quién sigue.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014050000",
+          "title": "Yo me Llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2017,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014050000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 14315,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000016",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000016",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000016&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000016,
+          "contentType": "BUNDLE",
+          "longDescription": "Formato colombiano exitoso el cual ha sido adaptado en varios países del mundo.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014040000",
+          "title": "Yo me Llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2015,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014040000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 3609,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000040",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000040",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000040&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000040,
+          "contentType": "BUNDLE",
+          "longDescription": "Para esta temporada se seleccionaron a los ganadores del formato Yo me llamo de toda América",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014030000",
+          "title": "Yo me Llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2014,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014030000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 6315,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000039",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000039",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000039&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000039,
+          "contentType": "BUNDLE",
+          "longDescription": "¡Si la primera te gusto, esta te gustará el doble! Emociónate con las presentaciones de tus dobles favoritos.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014020000",
+          "title": "Yo me Llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2012,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014020000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 5930,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000038",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000038",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000038&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000038,
+          "contentType": "BUNDLE",
+          "longDescription": "Cada episodio de Tu Voz Estéreo revela relatos de vida, decisiones difíciles y emociones que marcan el alma.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111014010000",
+          "title": "Yo me Llamo",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2011,
+          "starRating": 0,
+          "pictureUrl": "1014000000/1014010000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "EF"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Concurso",
+            "Competencia",
+            "Musical",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000009,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 5664,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764587348110
+}

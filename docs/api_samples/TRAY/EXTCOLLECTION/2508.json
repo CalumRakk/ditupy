@@ -1,0 +1,347 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 4,
+    "containers": [
+      {
+        "id": "1500000266",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000266",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000266&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000266,
+          "contentType": "BUNDLE",
+          "longDescription": "Felicidades ganadores de SmartFilms . Con un celular y corazón demostraron que el talento y la creatividad no tienen límites.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_553N2",
+          "title": "Ganadores Categorías Smartfilms",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_553",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Cine",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000055,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 81444,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000267",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000267",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000267&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000267,
+          "contentType": "BUNDLE",
+          "longDescription": "Conoce a los finalistas de SmartFilms: talento, creatividad e innovación que transforman el cine con grandes historias",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_547N2",
+          "title": "Ganadores Subcategorías Smartfilms",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_547",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Cine",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000054,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 2131,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000265",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000265",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000265&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000265,
+          "contentType": "BUNDLE",
+          "longDescription": "Ya están los pre­nominados para el Gran SmartFilms: 20 cortometrajes destacan en la gala de premiación.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_554N2",
+          "title": "Prenominados Smartfilms",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_554",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Catchup",
+            "Cine"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000053,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 69847,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000051",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000051",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000051&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000051,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "El GRAN SMARTFILMS® 2025 celebra el talento de quienes demuestran que el cine con celulares también crea grandes historias.",
+          "contractStartDate": 1758025800000,
+          "contractEndDate": 1790829000000,
+          "externalId": "CATCHTEMP_545",
+          "title": "Gran SmartFilms",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_545",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Cine",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV"
+          ],
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 55945,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764586963167
+}

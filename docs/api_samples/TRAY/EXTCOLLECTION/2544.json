@@ -1,0 +1,273 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 3,
+    "containers": [
+      {
+        "id": "1700000043",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000043",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000043&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000043,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Un cuarto secreto, 2 elegidos, 12 horas de descanso, sorpresas y experiencias fuera de competencia.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_467",
+          "title": "Suite Ditu",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_467",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Reality",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "exclusive_content": true,
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 46285,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000044",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000044",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000044&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000044,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Descripción no disponible",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_461",
+          "title": "Rincón de los Castigos",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_461",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Reality",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "exclusive_content": true,
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 352,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000045",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000045",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000045&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000045,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Quienes pierdan el Desafío a muerte irán al Cubo de los Eliminados como back-ups, listos para reingresar si alguien se va.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_463",
+          "title": "Cubo de Eliminados",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_463",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Reality",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "exclusive_content": true,
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 46406,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764587598805
+}

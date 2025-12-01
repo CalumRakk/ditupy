@@ -1,0 +1,600 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 7,
+    "containers": [
+      {
+        "id": "1700000030",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000030",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000030&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000030,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Tribuna Caliente prende la pantalla con debates intensos, análisis directo y la mejor actualidad deportiva en vivo.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_215",
+          "title": "Tribuna Caliente (En Vivo)",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_215",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Periodístico"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 36548,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000032",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000032",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000032&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000032,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Jugada Maestra reúne a Hernández, Castell y De la Pava en un análisis profundo del fútbol con experiencia y visión experta.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_202",
+          "title": "Jugada Maestra (En Vivo)",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_202",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Deportes"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 37483,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000033",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000033",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000033&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000033,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Resume la actualidad del ciclismo con enfoque ágil en las hazañas y rostros colombianos que marcan el pelotón mundial.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_208",
+          "title": "Foto finish (E)",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_208",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Deportes"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 38993,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000035",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000035",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000035&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000035,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Gol Caracol Retro revive las hazañas inolvidables de la Selección Colombia y los grandes momentos del fútbol nacional.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_194",
+          "title": "GOL Caracol Retro",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_194",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Deportes"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 39247,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000034",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000034",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000034&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000034,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Caracol Sportcast explora el alma del deporte con charlas únicas junto a sus protagonistas. Historias que inspiran y sorprenden.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_206",
+          "title": "Caracol Sportcast (Repetición)",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_206",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ANDROID_TABLET",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "SEASON",
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Deportes"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 39102,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000031",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000031",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000031&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000031,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Noticias Sports ofrece la mejor cobertura deportiva de Colombia y el mundo, con información precisa, ágil y exclusiva.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_200",
+          "title": "Noticias Caracol Sports (En Vivo)",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_200",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Deportes"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 37500,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000027",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000027",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000027&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000027,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Un viaje audiovisual por la clasificación de Colombia al Mundial 2014, con acceso inédito a jugadores, cuerpo técnico y camerinos.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111054000000",
+          "title": "Diario de un sueño",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "1054000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Deportes",
+            "Documental"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Talent show"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 32987,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764586940755
+}

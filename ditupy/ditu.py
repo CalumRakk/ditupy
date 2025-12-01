@@ -5,7 +5,9 @@ from typing import Iterator, List, Tuple
 import requests
 from unidecode import unidecode
 
+from ditupy.schemas.bundle_item import BundleItem
 from ditupy.schemas.catalog import CatalogItem
+from ditupy.schemas.collection import Collection
 from ditupy.schemas.common import ChannelInfo
 from ditupy.schemas.dashmanifest_response import DashManifestResponse
 from ditupy.schemas.raw_schedule_response import RawTVScheduleResponse
@@ -193,6 +195,10 @@ class DituClient:
 
             for item in items:
                 meta = item.get("metadata", {})
+                uri = item.get("retrieveItems", {}).get("uri", "")
+                if not uri:
+                    raise ValueError(f"Item sin URI en colección {tray_id}")
+
                 catalog_item = CatalogItem(
                     contentId=meta.get("contentId"),
                     title=meta.get("title"),
@@ -203,6 +209,46 @@ class DituClient:
                     episodeTitle=meta.get("episodeTitle"),
                     season=meta.get("season"),
                     source_collection_id=str(tray_id),
+                    uri=uri,
                 )
 
                 yield catalog_item
+
+    def get_collections(self) -> List[Collection]:
+        """
+        Obtiene las colecciones disponibles en la página principal del catálogo.
+        """
+        page_url = f"{self.BASE_URL}/PAGE/402"
+        resp = self.session.get(page_url)
+        resp.raise_for_status()
+        page_data = resp.json()
+
+        collections = []
+        for tray in page_data.get("resultObj", {}).get("containers", []):
+            collections.append(Collection(**tray))
+        return collections
+
+    def get_collection(self, collection: Collection) -> List[BundleItem]:
+        """
+        Obtiene los episodios de una colección específica por su ID.
+        """
+        uri = collection.retrieveItems.uri
+        collection_url = f"{self.BASE_URL}{uri}"
+        resp = self.session.get(collection_url)
+
+        resp.raise_for_status()
+        col_data = resp.json()
+
+        items = col_data.get("resultObj", {}).get("containers", [])
+        collections = []
+        for index, item in enumerate(items):
+            layout = item["layout"]
+            logger.debug(
+                "%d - Layout : %s: Item de colección con %d elementos. Campos disponibles: %s",
+                index,
+                layout,
+                len(item),
+                list(item.keys()),
+            )
+            collections.append(BundleItem(**item))
+        return collections

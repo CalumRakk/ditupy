@@ -1,0 +1,1221 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 14,
+    "containers": [
+      {
+        "id": "1500000278",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000278",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000278&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000278,
+          "contentType": "BUNDLE",
+          "longDescription": "Daniel Samper Ospina satiriza el poder en NotiDanny, ahora disponible en DITU. Crítica y humor sin censura.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_565N2",
+          "title": "NotiDanny",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_565",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Humor",
+            "Periodístico",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Catchup"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000060,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 87995,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000326",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000326",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000326&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000326,
+          "contentType": "BUNDLE",
+          "longDescription": "Paulina y Paola, dos mujeres idénticas físicamente, pero opuestas en esencia, cambiarán su vida completamente cuando el destino cruce sus caminos.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_612N2",
+          "title": "La Usurpadora",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_612",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000065,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 94636,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000008821",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000008821",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000008821,
+          "contentType": "VOD",
+          "longDescription": "Documental de Caracol sobre 1989, año de violencia en Colombia. Basado en el libro de María E. Samper y dirigido por R. Pombo.",
+          "year": "2023",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111114010001",
+          "title": "1989",
+          "duration": 3578,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "MOVIE",
+          "episodeTitle": "1989",
+          "episodeNumber": 1,
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1114000000",
+          "language": "SPA",
+          "pcLevel": 18,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Documental"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Periodístico"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 47646,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000013452",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000013452",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000013452,
+          "contentType": "VOD",
+          "longDescription": "Desolación, dolor y memoria. El documental revela las sombras que dejó el desastre más grande en la historia de Colombia.",
+          "year": "2015",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111182010001",
+          "title": "El valle sin sombras",
+          "duration": 5665,
+          "contentSubtype": "MOVIE",
+          "episodeTitle": "El valle sin sombras",
+          "episodeNumber": 1,
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1182000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Arte y Humanidades",
+            "Documental"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Documental"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 150560,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000047",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000047",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000047&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000047,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "El capitán Ali rompe a la familia Akarsu en 1967, desatando tragedias que pondrán a prueba su dignidad y unión.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_482",
+          "title": "Tormenta De Pasiones",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_482",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Familiar",
+            "Drama",
+            "Dramatizados",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 47559,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000058",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000058",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000058&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000058,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Conoce a los candidatos de Colombia: sus ideas, propuestas e ideologías en entrevistas únicas.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_548",
+          "title": "Yo me Creo Presidente",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_548",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Periodístico",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 86248,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1000012707",
+        "layout": "CONTENT_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/VOD/1000012707",
+            "targetType": "PAGE"
+          }
+        ],
+        "metadata": {
+          "contentId": 1000012707,
+          "contentType": "VOD",
+          "longDescription": "William acompaña a su tío en una aventura musical que lo lleva a descubrir el amor, la traición y la vida adulta.",
+          "year": "2002",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111205010001",
+          "title": "Te busco",
+          "duration": 5054,
+          "isNotAvailableOutOfHome": false,
+          "contentSubtype": "MOVIE",
+          "episodeTitle": "Te Busco",
+          "episodeNumber": 1,
+          "season": 1,
+          "starRating": 0,
+          "pictureUrl": "1205000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Canto/Talento",
+            "Humor",
+            "Romance"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Pelicula"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 90372,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000328",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000328",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000328&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000328,
+          "contentType": "BUNDLE",
+          "longDescription": "Premios Macondo 2025: Medellín brilló con lo mejor del cine colombiano. Gala presentada por Carolina Gómez y Paola Turbay.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_618N2",
+          "title": "Premios Macondo 2025",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_618",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Cine",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Entretenimiento"
+          },
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000066,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 95985,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000064",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000064",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000064&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000064,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "La vida de Leyla da un giro cuando su padre se casa con Nur, la joven que cuidó a su madre antes de fallecer.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_603",
+          "title": "Leyla",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_603",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 467,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000061",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000061",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000061&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000061,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Programa periodístico que combina crónicas, investigación, perfiles y entrevistas para contar grandes historias.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1924905600000,
+          "externalId": "CARA0000111206000000",
+          "title": "Los Informantes, grandes historias",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "1206000000",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Periodístico",
+            "Investigativo"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Periodístico"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 90520,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000040",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000040",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000040&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000040,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Desafío Siglo XXI está diseñado para revolucionar y llevar al límite a los 32 mejores competidores del país.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_448",
+          "title": "Desafío Siglo XXI",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_448",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Aventura",
+            "Reality",
+            "Competencia",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 45631,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1700000050",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/GROUP_OF_BUNDLES/1700000050",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1700000050&filter_contentType=BUNDLE",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1700000050,
+          "contentType": "GROUP_OF_BUNDLES",
+          "longDescription": "Maritza, influencer en declive, se une a Salvador, dueño de una pizzería, para limpiar su imagen y revivir el negocio. En el camino surge el amor, pero deberán enfrentar a Avril y “Germen”, decididos a sabotear sus sueños.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_544",
+          "title": "La Influencer",
+          "duration": 0,
+          "contentSubtype": "SERIE",
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_544",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Romance",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Telenovela"
+          },
+          "contentOptions": []
+        },
+        "assets": [
+          {
+            "assetId": 55676,
+            "assetType": "MASTER",
+            "assetName": "GROUP_OF_BUNDLES_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000172",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000172",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000172&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000172,
+          "contentType": "BUNDLE",
+          "longDescription": "Elif descubre secretos tras la muerte de su esposo y encuentra a Güneş, una niña que cambiará su vida para siempre.Descripción no disponible",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_424N2",
+          "title": "La Luz de mi Vida",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_424",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000038,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 44599,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1500000268",
+        "layout": "BUNDLE_ITEM",
+        "actions": [
+          {
+            "key": "onClick",
+            "uri": "/PAGE/DETAILS/BUNDLE/1500000268",
+            "targetType": "PAGE"
+          }
+        ],
+        "retrieveItems": {
+          "uri": "/TRAY/SEARCH/VOD?filter_parentId=1500000268&filter_contentType=VOD",
+          "type": "REMOTE"
+        },
+        "metadata": {
+          "contentId": 1500000268,
+          "contentType": "BUNDLE",
+          "longDescription": "Mahinur y Aras descubren que sus hijas fueron intercambiadas al nacer; madre, verdad y amor frente al caos familiar.",
+          "contractStartDate": 1735689600000,
+          "contractEndDate": 1767139200000,
+          "externalId": "CATCHTEMP_556N2",
+          "title": "Hilos de Vida",
+          "duration": 0,
+          "contentSubtype": "SEASON",
+          "season": 2025,
+          "starRating": 0,
+          "pictureUrl": "catchup/TEMP_556",
+          "language": "SPA",
+          "pcLevel": 0,
+          "pcExtendedRatings": [],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "genres": [
+            "Drama",
+            "Dramatizados",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "contentOptions": []
+        },
+        "parents": [
+          {
+            "parentId": 1700000056,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ],
+        "assets": [
+          {
+            "assetId": 85308,
+            "assetType": "MASTER",
+            "assetName": "BUNDLE_NA",
+            "videoType": "NA",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764587602917
+}

@@ -1,0 +1,29 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 1,
+    "containers": [
+      {
+        "layout": "CONTENT_DETAIL",
+        "title": "Desafío Siglo XXI - Capítulos de la Semana",
+        "id": "509_32",
+        "hash": "17ee87f0a4cc3d28ab10c664eb798d93",
+        "metadata": {
+          "label": "Desafío Siglo XXI - Capítulos de la Semana",
+          "imageUrl": "",
+          "id": "509_32",
+          "hash": "17ee87f0a4cc3d28ab10c664eb798d93",
+          "tray_background": ""
+        },
+        "retrieveItems": {
+          "uri": "/CONTENT/DETAIL/BUNDLE/1500000269",
+          "type": "REMOTE"
+        },
+        "actions": []
+      }
+    ]
+  },
+  "systemTime": 1764516426978
+}

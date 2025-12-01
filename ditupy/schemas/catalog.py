@@ -13,6 +13,7 @@ class CatalogItem(BaseModel):
     season: Optional[int] = None
     # Agregamos el ID de la colección para saber de dónde vino
     source_collection_id: str
+    uri: str
 
     @property
     def is_episodic(self) -> bool:

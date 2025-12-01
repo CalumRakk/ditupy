@@ -1,7 +1,5 @@
-import json
-from pathlib import Path
-
 import requests
+from utils import save_api_response
 
 headers = {
     "Restful": "yes",
@@ -15,4 +13,4 @@ base_url = "https://varnish-prod.avscaracoltv.com"
 url = f"{base_url}/AGL/1.6/A/ENG/ANDROID/ALL/TRAY/EXTCOLLECTION/2213"
 resp = requests.get(url, headers=headers)
 
-Path("tray_2213_collection.json").write_text(json.dumps(resp.json()))
+save_api_response(url, resp.json())
