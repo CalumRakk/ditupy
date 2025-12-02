@@ -1,33 +1,36 @@
 🚧🔨👷‍♂️
 
-```python
-from ditupy.ditu import DituClient
-from ditupy.services.processor import PostProcessor
-from ditupy.services.vod_downloader import VodDownloader
+# DituPy
 
-client = DituClient()
+Cliente y descargador de contenido VOD automatizado capaz de procesar streams DASH protegidos con Widevine.
 
-series = client.get_series()
+## 🛠️ Requisitos Previos
 
-for serie in series:
-    if "desafío" in serie.metadata.title.lower():
-        episodes = client.get_episodes(serie_id=serie.id)
-        for episode in episodes:
-            title = episode.title_slug
-            episode_number = episode.metadata.episodeNumber
-            output_path = f"downloads/{title}_{episode_number}"
+Para que el sistema de descifrado y empaquetado funcione, necesitas instalar dos herramientas externas y agregarlas a las **Variables de Entorno (PATH)** de tu sistema.
 
-            manifest = client.get_stream_url(content_id=episode.metadata.contentId)
-            downloader = VodDownloader(manifest=manifest, output_path=output_path)
-            processor = PostProcessor(output_path)
+### 1. FFmpeg
+Esencial para unir audio/video y empaquetar el MP4 final.
+- **Descarga:** [ffmpeg.org](https://ffmpeg.org/download.html) (o `winget install ffmpeg` en Windows).
+- **Instalación:** Extrae el contenido y agrega la carpeta `/bin` a tu PATH.
+- **Verificación:** Ejecuta `ffmpeg -version` en tu terminal.
 
-            downloader.download()
+### 2. Bento4 (Descifrado)
+Necesario para desencriptar las pistas protegidas con DRM.
+- **Descarga:** [Bento4 Binaries](https://www.bento4.com/downloads/).
+- **Instalación:** Descarga el SDK para tu SO, extrae el ZIP y agrega la carpeta `/bin` a tu PATH.
+- **Verificación:** Ejecuta `mp4decrypt` en tu terminal.
 
-            filename = f"{title}_{episode_number}.mp4"
-            processor.process(filename)
+### 3. Widevine CDM (Content Decryption Module)
+Necesitas un dispositivo Android volcado (dumped) válido (L3).
+- Coloca tu carpeta de dispositivo (con `client_id.bin` y `private_key.pem`) o tu archivo `.wvd` en una ruta accesible.
+- Configura la ruta en `debug_download_episode.py` o tu script de entrada.
 
-            print(f"Downloaded: {episode.metadata.title}")
-            exit()
-```
+## 🚀 Instalación del Proyecto
 
-    
+```bash
+# Crear entorno virtual (opcional pero recomendado)
+python -m venv venv
+source venv/bin/activate  # O venv\Scripts\activate en Windows
+
+# Instalar dependencias
+pip install -r requirements.txt

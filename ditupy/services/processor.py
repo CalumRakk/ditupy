@@ -3,7 +3,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
-from typing import List, Union
+from typing import Dict, List, Optional, Union
 
 logger = logging.getLogger(__name__)
 
@@ -56,76 +56,120 @@ class PostProcessor:
                 with open(f, "rb") as readfile:
                     shutil.copyfileobj(readfile, outfile)
 
-    def process(self, output_filename: str, cleanup: bool = True):
+    def _decrypt_track(
+        self, encrypted_path: Path, keys: Dict[str, str]
+    ) -> Optional[Path]:
         """
-        Orquesta la unión y el muxing final.
+        Desencripta un track usando mp4decrypt (Bento4).
+        Retorna la ruta del archivo desencriptado o None si falla.
         """
-        temp_video = self.working_dir / "temp_video_track.mp4"
-        temp_audio = self.working_dir / "temp_audio_track.mp4"
+        if not keys:
+            logger.warning("No se proporcionaron llaves de desencriptación.")
+            return encrypted_path
+
+        decrypted_path = encrypted_path.with_name(f"dec_{encrypted_path.name}")
+
+        # Llaves para mp4decrypt. Formato: --key KID:KEY
+        key_args = []
+        for kid, key in keys.items():
+            key_args.extend(["--key", f"{kid}:{key}"])
+
+        cmd = [
+            "mp4decrypt",
+            "--show-progress",
+            *key_args,
+            str(encrypted_path),
+            str(decrypted_path),
+        ]
+
+        try:
+            logger.info(f"Desencriptando {encrypted_path.name}...")
+            subprocess.run(
+                cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE
+            )
+            return decrypted_path
+        except subprocess.CalledProcessError as e:
+            logger.error(f"Error desencriptando: {e}")
+            return None
+        except FileNotFoundError:
+            logger.error(
+                "mp4decrypt no encontrado. Asegúrate de tener Bento4 instalado y en el PATH."
+            )
+            return None
+
+    def process(
+        self,
+        output_filename: str,
+        keys: Optional[Dict[str, str]] = None,
+        cleanup: bool = True,
+    ):
+        """
+        Orquesta la unión, (desencriptación) y el muxing final.
+        """
+        temp_video_enc = self.working_dir / "temp_video_enc.mp4"
+        temp_audio_enc = self.working_dir / "temp_audio_enc.mp4"
 
         final_output = self.working_dir / output_filename
 
         video_files = self._get_sorted_segments(self.video_dir, "segment_init.mp4")
-        if not video_files:
+        video_track = None
+
+        if video_files:
+            self._concatenate_binary(video_files, temp_video_enc)
+            if keys:
+                video_track = self._decrypt_track(temp_video_enc, keys)
+                if not video_track:
+                    logger.error("Fallo crítico en desencriptación de video.")
+                    return
+            else:
+                video_track = temp_video_enc
+        else:
             logger.error("No se encontraron segmentos de video.")
             return
 
-        self._concatenate_binary(video_files, temp_video)
-
-        # Identificar y Unir Audio
         audio_files = self._get_sorted_segments(self.audio_dir, "segment_init.mp4")
-        has_audio = False
+        audio_track = None
+
         if audio_files:
-            self._concatenate_binary(audio_files, temp_audio)
-            has_audio = True
-        else:
-            logger.warning(
-                "No se encontraron segmentos de audio. Se generará video mudo."
-            )
+            self._concatenate_binary(audio_files, temp_audio_enc)
+            if keys:
+                audio_track = self._decrypt_track(temp_audio_enc, keys)
+            else:
+                audio_track = temp_audio_enc
 
-        # Muxing con FFmpeg (Copia streams sin recodificar)
         logger.info("Empaquetando contenedor final con FFmpeg...")
-        cmd = [
-            "ffmpeg",
-            "-y",
-            "-i",
-            str(temp_video),
-        ]
+        cmd = ["ffmpeg", "-y", "-i", str(video_track)]
 
-        if has_audio:
-            cmd.extend(["-i", str(temp_audio)])
+        if audio_track:
+            cmd.extend(["-i", str(audio_track)])
 
-        # -c copy: copia los streams tal cual (encriptados)
         cmd.extend(["-c", "copy", "-movflags", "+faststart", str(final_output)])
 
         try:
             subprocess.run(
                 cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE
             )
-            logger.info(f"¡Éxito! Video unificado creado en: {final_output}")
+            logger.info(f"¡Éxito! Video final creado en: {final_output}")
 
             if cleanup:
-                logger.info("Limpiando segmentos basura y temporales...")
-                self._cleanup_garbage(temp_video, temp_audio)
+                logger.info("Limpiando temporales...")
+                files_to_remove = [temp_video_enc, temp_audio_enc]
+                if keys:
+                    files_to_remove.append(video_track)
+                    if audio_track:
+                        files_to_remove.append(audio_track)
+
+                self._cleanup_garbage(files_to_remove)
 
         except subprocess.CalledProcessError as e:
             logger.error(f"Error en FFmpeg: {e}")
-        except FileNotFoundError:
-            logger.error("FFmpeg no está instalado o no se encuentra en el PATH.")
 
-    def _cleanup_garbage(self, temp_video: Path, temp_audio: Path):
-        """
-        Elimina solo lo que sobra: carpetas de segmentos y tracks temporales.
-        Mantiene: El archivo final, manifest.mpd y drm_info.json.
-        """
-        # Eliminar carpetas de segmentos
+    def _cleanup_garbage(self, files_to_remove: List[Path]):
         if self.video_dir.exists():
             shutil.rmtree(self.video_dir)
         if self.audio_dir.exists():
             shutil.rmtree(self.audio_dir)
 
-        # Eliminar tracks intermedios unidos
-        if temp_video.exists():
-            temp_video.unlink()
-        if temp_audio.exists():
-            temp_audio.unlink()
+        for f in files_to_remove:
+            if f and f.exists():
+                f.unlink()
