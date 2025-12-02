@@ -8,17 +8,17 @@ import requests
 
 logger = logging.getLogger(__name__)
 
+
 class SegmentDownloader:
     def __init__(self, output_dir: Union[Path, str], max_workers: int = 4):
         output_dir = Path(output_dir) if isinstance(output_dir, str) else output_dir
-        
+
         self.output_dir = output_dir
         self.max_workers = max_workers
         self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": "okhttp/4.12.0",
-            "Accept-Encoding": "gzip, deflate, br"
-        })
+        self.session.headers.update(
+            {"User-Agent": "okhttp/4.12.0", "Accept-Encoding": "gzip, deflate, br"}
+        )
 
     def download_file(self, url: str, subdir: str = "") -> bool:
         """Descarga un archivo si no existe. Retorna True si se descargó."""
@@ -43,7 +43,7 @@ class SegmentDownloader:
         """Descarga una lista de URLs en paralelo."""
         if not urls:
             return
-            
+
         with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             futures = [executor.submit(self.download_file, url, subdir) for url in urls]
             for f in futures:

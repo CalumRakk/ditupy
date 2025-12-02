@@ -1,4 +1,5 @@
 from ditupy.ditu import DituClient
+from ditupy.services.vod_downloader import VodDownloader
 
 client = DituClient()
 
@@ -9,4 +10,9 @@ for serie in series:
         episodes = client.get_episodes(serie_id=serie.id)
         for episode in episodes:
             manifest = client.get_stream_url(content_id=episode.metadata.contentId)
-            print(manifest)
+            downloader = VodDownloader(
+                manifest=manifest, output_path=f"downloads/{episode.title_slug}"
+            )
+            downloader.download()
+            print(f"Downloaded: {episode.metadata.title}")
+            exit()

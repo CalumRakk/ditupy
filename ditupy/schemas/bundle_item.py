@@ -1,6 +1,7 @@
 from typing import List, Literal, Optional
 
 from pydantic import BaseModel
+from unidecode import unidecode
 
 
 class Action(BaseModel):
@@ -32,3 +33,7 @@ class BundleItem(BaseModel):
     retrieveItems: Optional[RetrieveItems] = None
     actions: List[Action]
     metadata: Metadata
+
+    @property
+    def title_slug(self) -> str:
+        return unidecode(self.metadata.title).lower().replace(" ", "_")
