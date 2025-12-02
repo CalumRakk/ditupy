@@ -5,8 +5,7 @@ from urllib.parse import urljoin
 
 logger = logging.getLogger(__name__)
 
-
-NAMESPACES = {"mpd": "urn:mpeg:dash:schema:mpd:2011"}
+NAMESPACES = {"mpd": "urn:mpeg:dash:schema:mpd:2011", "cenc": "urn:mpeg:cenc:2013"}
 
 
 class XmlNode:
@@ -30,7 +29,7 @@ class XmlNode:
             return default
 
     def _find_children(self, tag_name: str) -> List[ET.Element]:
-        """Busca hijos directos usando el namespace."""
+        """Busca hijos directos usando el namespace MPD por defecto."""
         return self._el.findall(f"mpd:{tag_name}", NAMESPACES)
 
     def _find_child(self, tag_name: str) -> Optional[ET.Element]:
@@ -42,10 +41,40 @@ class XmlNode:
         node = self._find_child("BaseURL")
         local_base = node.text.strip() if node is not None and node.text else ""
 
-        # Si hay una URL base local, la unimos a la del padre, si no, devolvemos la del padre
         if local_base:
             return urljoin(self._base_url, local_base)
         return self._base_url
+
+
+class ContentProtection(XmlNode):
+    """Representa el nodo <ContentProtection>."""
+
+    @property
+    def scheme_id_uri(self) -> str:
+        return self._attr("schemeIdUri", "")
+
+    @property
+    def value(self) -> str:
+        return self._attr("value", "")
+
+    @property
+    def default_kid(self) -> Optional[str]:
+        """
+        Extrae el cenc:default_KID.
+        Nota: ET requiere la URI completa entre corchetes para atributos con namespace.
+        """
+        key = f"{{{NAMESPACES['cenc']}}}default_KID"
+        return self._el.get(key)
+
+    @property
+    def pssh(self) -> Optional[str]:
+        """
+        Busca el hijo <cenc:pssh> y extrae su contenido (Base64).
+        """
+        node = self._el.find("cenc:pssh", NAMESPACES)
+        if node is not None and node.text:
+            return node.text.strip()
+        return None
 
 
 class SegmentTemplate(XmlNode):
@@ -66,23 +95,19 @@ class SegmentTemplate(XmlNode):
         return self._attr("timescale", 1, int)
 
     def generate_segment_urls(self, representation_id: str) -> List[str]:
-        """
-        Genera la lista de URLs basada en los segmentos 'S' (Timeline).
-        Esta lógica se mueve aquí para encapsular la complejidad del Timeline.
-        """
         segments = []
         timeline = self._find_child("SegmentTimeline")
         if not timeline:
-            return segments
+            # TODO: Implementar lógica basada en duración si no hay timeline.
+            raise NotImplementedError(
+                "SegmentTimeline no implementado sin SegmentTimeline."
+            )
 
         current_number = self.start_number
-
-        # Patrón de reemplazo: $Number$ y $RepresentationID$
         media_pattern = self.media.replace("$RepresentationID$", str(representation_id))
 
         for s in timeline.findall("mpd:S", NAMESPACES):
             repeat = int(s.get("r", 0))
-            # El segmento S representa (1 + r) segmentos reales
             for _ in range(repeat + 1):
                 url_rel = media_pattern.replace("$Number$", str(current_number))
                 segments.append(urljoin(self._base_url, url_rel))
@@ -94,7 +119,7 @@ class SegmentTemplate(XmlNode):
 class Representation(XmlNode):
     @property
     def id(self) -> str:
-        return self._attr("id")  # String porque a veces son alfanuméricos
+        return self._attr("id")
 
     @property
     def bandwidth(self) -> int:
@@ -112,19 +137,14 @@ class Representation(XmlNode):
     def codecs(self) -> str:
         return self._attr("codecs", "")
 
-    @property
-    def frame_rate(self) -> str:
-        return self._attr("frameRate", "")
-
-    @property
-    def audio_sampling_rate(self) -> str:
-        return self._attr("audioSamplingRate", "")
+    def get_content_protections(self) -> List[ContentProtection]:
+        """Obtiene las protecciones definidas a nivel de Representación."""
+        return [
+            ContentProtection(el, self.base_url)
+            for el in self._find_children("ContentProtection")
+        ]
 
     def get_segments(self) -> List[str]:
-        """Obtiene los segmentos combinando información propia o heredada."""
-        # DASH permite definir SegmentTemplate en el AdaptationSet padre o en la Representation.
-        # Aquí buscamos primero en el hijo (self), si no está, asumimos que viene del contexto (que tendríamos que pasar)
-        # Para simplificar, Ditu parece ponerlo dentro de Representation:
         tmpl_node = self._find_child("SegmentTemplate")
         if tmpl_node:
             template = SegmentTemplate(tmpl_node, self.base_url)
@@ -156,7 +176,16 @@ class AdaptationSet(XmlNode):
     def is_audio(self) -> bool:
         return "audio" in self.mime_type
 
+    def get_content_protections(self) -> List[ContentProtection]:
+        """Obtiene protecciones heredadas (nivel AdaptationSet)."""
+        return [
+            ContentProtection(el, self.base_url)
+            for el in self._find_children("ContentProtection")
+        ]
+
     def get_representations(self) -> List[Representation]:
+        # Estandar: Las representaciones heredan la info de ContentProtection del padre si no la tienen.
+        # Nuestro caso: El XML muestra que están dentro de Representation, pero es bueno tenerlo en cuenta.
         return [
             Representation(el, self.base_url)
             for el in self._find_children("Representation")
@@ -169,23 +198,14 @@ class AdaptationSet(XmlNode):
             return None
 
         if self.is_video:
-            options = [f"{r.width}x{r.height}@{r.bandwidth}bps" for r in reps]
-            logger.debug(f"Opciones de VIDEO encontradas: {options}")
-
-            # Seleccionar (Mayor ancho de banda)
             best = sorted(reps, key=lambda r: r.bandwidth, reverse=True)[0]
             logger.info(
-                f"Mejor VIDEO seleccionado: {best.width}x{best.height} (ID: {best.id}, BW: {best.bandwidth})"
+                f"Mejor VIDEO: {best.width}x{best.height} (ID: {best.id}, BW: {best.bandwidth})"
             )
             return best
         else:
-            options = [f"{r.bandwidth}bps" for r in reps]
-            logger.debug(f"Opciones de AUDIO encontradas: {options}")
-
             best = sorted(reps, key=lambda r: r.bandwidth, reverse=True)[0]
-            logger.info(
-                f"Mejor AUDIO seleccionado: ID {best.id} (BW: {best.bandwidth})"
-            )
+            logger.info(f"Mejor AUDIO: ID {best.id} (BW: {best.bandwidth})")
             return best
 
 
@@ -201,9 +221,6 @@ class Period(XmlNode):
     def get_adaptation_sets(
         self, type_filter: Optional[str] = None
     ) -> List[AdaptationSet]:
-        """
-        type_filter: 'video', 'audio', o None para todos.
-        """
         sets = [
             AdaptationSet(el, self.base_url)
             for el in self._find_children("AdaptationSet")
@@ -217,10 +234,10 @@ class Period(XmlNode):
 
 class DashManifest:
     def __init__(self, xml_content: str, source_url: str = ""):
-        """
-        source_url: La URL original del .mpd, necesaria para resolver rutas relativas si no hay BaseURL.
-        """
-        # Si el dash contiene BaseURL, se usará esa; si no, el valor de source_url para construir las URLs completas de los segmentos.
+        # Registramos namespaces para que ElementTree no se queje al escribir o buscar
+        for prefix, uri in NAMESPACES.items():
+            ET.register_namespace(prefix, uri)
+
         self._root = ET.fromstring(xml_content)
         self._source_url = source_url
 
@@ -241,6 +258,5 @@ class DashManifest:
         ]
 
     def get_content_period(self) -> Period:
-        """Logica 'magica' para encontrar el contenido real."""
         periods = self.get_periods()
         return periods[0]
