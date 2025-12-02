@@ -1,5 +1,4 @@
-# archivo: ditupy/vod_recorder.py
-
+import json
 import logging
 from pathlib import Path
 from typing import Union
@@ -21,66 +20,93 @@ class VodDownloader:
     ):
         """
         :param manifest: Objeto Manifest obtenido de client.get_stream_url()
-        :param output_path: Ruta base donde se guardará el contenido (ej: downloads/Nombre_Capitulo)
+        :param output_path: Ruta base donde se guardará el contenido
         """
         self.output_path = (
             Path(output_path) if isinstance(output_path, str) else output_path
         )
-        self.manifest_url = manifest.src
-        # TODO: Acopla esta logica hasta que realmente se justique inyectarla.
+        self.manifest_data = manifest
         self.downloader = SegmentDownloader(self.output_path, max_workers=8)
 
+    def _save_metadata(self, xml_content: str):
+        """
+        Guarda los datos necesarios trabajar con el DRM.
+        """
+        # Guardar el Manifiesto crudo (.mpd)
+        # Es necesario para extraer el PSSH.
+        mpd_path = self.output_path / "manifest.mpd"
+        mpd_path.write_text(xml_content, encoding="utf-8")
+        logger.info(f"Manifiesto guardado en: {mpd_path}")
+
+        # Guardar Token y URL del servidor de licencias
+        # TODO: conseguir la URL del servidor de licencias y guardarla junto aqui. Esta suele ser estatica.
+        meta_data = {
+            "manifest_url": self.manifest_data.src,
+            "token": self.manifest_data.token,
+            "license_type": "com.widevine.alpha",
+            "license_url": "",
+        }
+
+        meta_path = self.output_path / "drm_info.json"
+        with open(meta_path, "w", encoding="utf-8") as f:
+            json.dump(meta_data, f, indent=4)
+
+        logger.info(f"Metadatos DRM guardados en: {meta_path}")
+
     def download(self) -> Path:
-        logger.info(f"Iniciando descarga VOD desde: {self.manifest_url}")
+        self.output_path.mkdir(parents=True, exist_ok=True)
+
+        logger.info(f"Iniciando descarga VOD desde: {self.manifest_data.src}")
         try:
-            resp = requests.get(self.manifest_url)
+            resp = requests.get(self.manifest_data.src)
             resp.raise_for_status()
             xml_content = resp.text
         except Exception as e:
             logger.error(f"Error obteniendo manifiesto: {e}")
             raise e
 
-        dash = DashManifest(xml_content, source_url=self.manifest_url)
+        self._save_metadata(xml_content)
 
+        dash = DashManifest(xml_content, source_url=self.manifest_data.src)
         period = dash.get_content_period()
 
-        # Seleccionar mejores representaciones (Video y Audio)
+        # Seleccionar mejores representaciones
         video_sets = period.get_adaptation_sets(type_filter="video")
         audio_sets = period.get_adaptation_sets(type_filter="audio")
 
         if not video_sets or not audio_sets:
-            logger.error("No se encontraron pistas de video o audio en el manifiesto.")
-            raise ValueError(
-                "No se encontraron pistas de video o audio en el manifiesto."
-            )
+            msg = "No se encontraron pistas de video o audio en el manifiesto."
+            logger.error(msg)
+            raise ValueError(msg)
 
         video_rep = video_sets[0].get_best_representation()
         audio_rep = audio_sets[0].get_best_representation()
+
         if not audio_rep or not video_rep:
-            logger.error("No se encontraron representaciones de video o audio.")
-            raise ValueError("No se encontraron representaciones de video o audio.")
+            msg = "No se encontraron representaciones válidas."
+            logger.error(msg)
+            raise ValueError(msg)
 
         logger.info(
             f"Calidad seleccionada: Video {video_rep.height}p | Audio {audio_rep.bandwidth}bps"
         )
 
-        # Descargar segmentos de inicialización (init.mp4)
+        # Descargar inits
         logger.info("Descargando segmentos de inicialización...")
         self.downloader.download_file(video_rep.initialization_url, "video")
         self.downloader.download_file(audio_rep.initialization_url, "audio")
 
-        # Generar lista completa de segmentos
+        # Descargar segmentos
         logger.info("Calculando segmentos...")
         video_segments = video_rep.get_segments()
         audio_segments = audio_rep.get_segments()
 
         logger.info(
-            f"Total segmentos a descargar: Video: {len(video_segments)} | Audio: {len(audio_segments)}"
+            f"Video: {len(video_segments)} segmentos | Audio: {len(audio_segments)} segmentos"
         )
 
-        # Descarga masiva en paralelo
         self.downloader.download_batch(video_segments, "video")
         self.downloader.download_batch(audio_segments, "audio")
 
-        logger.info("Descarga de segmentos finalizada.")
+        logger.info("Descarga finalizada. Archivos listos para desencriptado.")
         return self.output_path
