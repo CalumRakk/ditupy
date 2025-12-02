@@ -23,12 +23,14 @@ class VodDownloader:
         :param manifest: Objeto Manifest obtenido de client.get_stream_url()
         :param output_path: Ruta base donde se guardará el contenido (ej: downloads/Nombre_Capitulo)
         """
+        self.output_path = (
+            Path(output_path) if isinstance(output_path, str) else output_path
+        )
         self.manifest_url = manifest.src
-        self.output_path = Path(output_path)
         # TODO: Acopla esta logica hasta que realmente se justique inyectarla.
         self.downloader = SegmentDownloader(self.output_path, max_workers=8)
 
-    def download(self):
+    def download(self) -> Path:
         logger.info(f"Iniciando descarga VOD desde: {self.manifest_url}")
         try:
             resp = requests.get(self.manifest_url)
@@ -36,7 +38,7 @@ class VodDownloader:
             xml_content = resp.text
         except Exception as e:
             logger.error(f"Error obteniendo manifiesto: {e}")
-            return
+            raise e
 
         dash = DashManifest(xml_content, source_url=self.manifest_url)
 
@@ -48,7 +50,9 @@ class VodDownloader:
 
         if not video_sets or not audio_sets:
             logger.error("No se encontraron pistas de video o audio en el manifiesto.")
-            return
+            raise ValueError(
+                "No se encontraron pistas de video o audio en el manifiesto."
+            )
 
         video_rep = video_sets[0].get_best_representation()
         audio_rep = audio_sets[0].get_best_representation()
@@ -79,3 +83,4 @@ class VodDownloader:
         self.downloader.download_batch(audio_segments, "audio")
 
         logger.info("Descarga de segmentos finalizada.")
+        return self.output_path

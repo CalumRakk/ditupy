@@ -25,6 +25,10 @@ class Metadata(BaseModel):
     genres: list[str]
 
     model_config = {"extra": "allow"}
+    duration: int
+    year: Optional[str] = None
+    episodeTitle: Optional[str] = None
+    episodeNumber: Optional[int] = None
 
 
 class BundleItem(BaseModel):

@@ -5,11 +5,14 @@ import subprocess
 from pathlib import Path
 from typing import List
 
+from git import Union
+
 logger = logging.getLogger(__name__)
 
 
 class PostProcessor:
-    def __init__(self, working_dir: Path):
+    def __init__(self, working_dir: Union[str, Path]):
+        working_dir = Path(working_dir) if isinstance(working_dir, str) else working_dir
         self.working_dir = working_dir
         self.video_dir = working_dir / "video"
         self.audio_dir = working_dir / "audio"
