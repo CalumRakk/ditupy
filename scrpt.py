@@ -1,9 +1,11 @@
 from ditupy.ditu import DituClient
+from ditupy.logging_config import setup_logging
 from ditupy.services.processor import PostProcessor
 from ditupy.services.vod_downloader import VodDownloader
 
-client = DituClient()
+setup_logging()
 
+client = DituClient()
 series = client.get_series()
 
 for serie in series:

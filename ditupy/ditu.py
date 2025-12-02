@@ -234,25 +234,29 @@ class DituClient:
         Obtiene la URL del MPD lista para reproducir un VOD.
         Hace la magia de buscar el Asset ID automáticamente.
         """
+        logger.info(f"Iniciando búsqueda de flujo para ContentID: {content_id}")
 
         detail = self.get_metadata(content_id, ContentType.VOD)
         if not detail.assets:
+            logger.error(f"El contenido {content_id} no retornó lista de assets.")
             raise ValueError(
                 f"El contenido {content_id} no tiene assets de video disponibles."
             )
 
-        # 2. Buscamos el asset tipo 'MASTER' (el principal)
-        # Podríamos filtrar también por videoType="HD" si fuera necesario
-        # Nota: 'detail.assets' contiene tambien el Trailer.
+        asset_types = [a.assetType for a in detail.assets]
+        logger.debug(f"Assets disponibles para {content_id}: {asset_types}")
+
+        # Buscamos el asset tipo 'MASTER' (el principal)
         master_asset = next((a for a in detail.assets if a.assetType == "MASTER"), None)
 
         if not master_asset:
+            logger.error(f"No se encontró asset MASTER. Disponibles: {asset_types}")
             raise ValueError(
                 f"No se encontró un asset MASTER para el contenido {content_id}"
             )
 
         logger.info(
-            f"Asset encontrado: {master_asset.assetName} (ID: {master_asset.assetId})"
+            f"Asset MASTER seleccionado: {master_asset.assetName} (ID: {master_asset.assetId}, VideoType: {master_asset.videoType})"
         )
         return self._fetch_vod_manifest(content_id, master_asset.assetId)
 

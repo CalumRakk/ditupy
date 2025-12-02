@@ -6,12 +6,12 @@ from urllib.parse import urljoin
 logger = logging.getLogger(__name__)
 
 
-NAMESPACES = {
-    "mpd": "urn:mpeg:dash:schema:mpd:2011"
-}
+NAMESPACES = {"mpd": "urn:mpeg:dash:schema:mpd:2011"}
+
 
 class XmlNode:
     """Clase base para envolver elementos XML y facilitar la extracción segura."""
+
     def __init__(self, element: ET.Element, base_url: str = ""):
         self._el = element
         self._base_url = base_url
@@ -24,7 +24,9 @@ class XmlNode:
         try:
             return cast_type(val)
         except (ValueError, TypeError):
-            logger.warning(f"Error casteando atributo '{name}' con valor '{val}' a {cast_type}")
+            logger.warning(
+                f"Error casteando atributo '{name}' con valor '{val}' a {cast_type}"
+            )
             return default
 
     def _find_children(self, tag_name: str) -> List[ET.Element]:
@@ -39,11 +41,12 @@ class XmlNode:
         """Resuelve la BaseURL acumulativa (MPD -> Period -> ...)"""
         node = self._find_child("BaseURL")
         local_base = node.text.strip() if node is not None and node.text else ""
-        
+
         # Si hay una URL base local, la unimos a la del padre, si no, devolvemos la del padre
         if local_base:
             return urljoin(self._base_url, local_base)
         return self._base_url
+
 
 class SegmentTemplate(XmlNode):
     @property
@@ -73,7 +76,7 @@ class SegmentTemplate(XmlNode):
             return segments
 
         current_number = self.start_number
-        
+
         # Patrón de reemplazo: $Number$ y $RepresentationID$
         media_pattern = self.media.replace("$RepresentationID$", str(representation_id))
 
@@ -84,18 +87,19 @@ class SegmentTemplate(XmlNode):
                 url_rel = media_pattern.replace("$Number$", str(current_number))
                 segments.append(urljoin(self._base_url, url_rel))
                 current_number += 1
-        
+
         return segments
+
 
 class Representation(XmlNode):
     @property
     def id(self) -> str:
-        return self._attr("id") # String porque a veces son alfanuméricos
+        return self._attr("id")  # String porque a veces son alfanuméricos
 
     @property
     def bandwidth(self) -> int:
         return self._attr("bandwidth", 0, int)
-    
+
     @property
     def width(self) -> Optional[int]:
         return self._attr("width", None, int)
@@ -103,7 +107,7 @@ class Representation(XmlNode):
     @property
     def height(self) -> Optional[int]:
         return self._attr("height", None, int)
-    
+
     @property
     def codecs(self) -> str:
         return self._attr("codecs", "")
@@ -111,7 +115,7 @@ class Representation(XmlNode):
     @property
     def frame_rate(self) -> str:
         return self._attr("frameRate", "")
-    
+
     @property
     def audio_sampling_rate(self) -> str:
         return self._attr("audioSamplingRate", "")
@@ -126,21 +130,24 @@ class Representation(XmlNode):
             template = SegmentTemplate(tmpl_node, self.base_url)
             return template.generate_segment_urls(self.id)
         return []
-    
+
     @property
     def initialization_url(self) -> str:
         tmpl_node = self._find_child("SegmentTemplate")
         if tmpl_node:
             template = SegmentTemplate(tmpl_node, self.base_url)
-            init_pattern = template.initialization.replace("$RepresentationID$", str(self.id))
+            init_pattern = template.initialization.replace(
+                "$RepresentationID$", str(self.id)
+            )
             return urljoin(self.base_url, init_pattern)
         return ""
+
 
 class AdaptationSet(XmlNode):
     @property
     def mime_type(self) -> str:
         return self._attr("mimeType", "")
-    
+
     @property
     def is_video(self) -> bool:
         return "video" in self.mime_type
@@ -150,17 +157,37 @@ class AdaptationSet(XmlNode):
         return "audio" in self.mime_type
 
     def get_representations(self) -> List[Representation]:
-        return [Representation(el, self.base_url) for el in self._find_children("Representation")]
+        return [
+            Representation(el, self.base_url)
+            for el in self._find_children("Representation")
+        ]
 
     def get_best_representation(self) -> Optional[Representation]:
         reps = self.get_representations()
         if not reps:
+            logger.warning(f"AdaptationSet ({self.mime_type}) sin representaciones.")
             return None
-        
+
         if self.is_video:
-            return sorted(reps, key=lambda r: r.bandwidth, reverse=True)[0]
+            options = [f"{r.width}x{r.height}@{r.bandwidth}bps" for r in reps]
+            logger.debug(f"Opciones de VIDEO encontradas: {options}")
+
+            # Seleccionar (Mayor ancho de banda)
+            best = sorted(reps, key=lambda r: r.bandwidth, reverse=True)[0]
+            logger.info(
+                f"Mejor VIDEO seleccionado: {best.width}x{best.height} (ID: {best.id}, BW: {best.bandwidth})"
+            )
+            return best
         else:
-            return sorted(reps, key=lambda r: r.bandwidth, reverse=True)[0]
+            options = [f"{r.bandwidth}bps" for r in reps]
+            logger.debug(f"Opciones de AUDIO encontradas: {options}")
+
+            best = sorted(reps, key=lambda r: r.bandwidth, reverse=True)[0]
+            logger.info(
+                f"Mejor AUDIO seleccionado: ID {best.id} (BW: {best.bandwidth})"
+            )
+            return best
+
 
 class Period(XmlNode):
     @property
@@ -171,16 +198,22 @@ class Period(XmlNode):
     def start(self) -> str:
         return self._attr("start")
 
-    def get_adaptation_sets(self, type_filter: Optional[str] = None) -> List[AdaptationSet]:
+    def get_adaptation_sets(
+        self, type_filter: Optional[str] = None
+    ) -> List[AdaptationSet]:
         """
         type_filter: 'video', 'audio', o None para todos.
         """
-        sets = [AdaptationSet(el, self.base_url) for el in self._find_children("AdaptationSet")]
-        if type_filter == 'video':
+        sets = [
+            AdaptationSet(el, self.base_url)
+            for el in self._find_children("AdaptationSet")
+        ]
+        if type_filter == "video":
             return [a for a in sets if a.is_video]
-        elif type_filter == 'audio':
+        elif type_filter == "audio":
             return [a for a in sets if a.is_audio]
         return sets
+
 
 class DashManifest:
     def __init__(self, xml_content: str, source_url: str = ""):
@@ -190,7 +223,7 @@ class DashManifest:
         # Si el dash contiene BaseURL, se usará esa; si no, el valor de source_url para construir las URLs completas de los segmentos.
         self._root = ET.fromstring(xml_content)
         self._source_url = source_url
-    
+
     @property
     def base_url(self) -> str:
         node = self._root.find("mpd:BaseURL", NAMESPACES)
@@ -202,7 +235,10 @@ class DashManifest:
         return self._source_url
 
     def get_periods(self) -> List[Period]:
-        return [Period(el, self.base_url) for el in self._root.findall("mpd:Period", NAMESPACES)]
+        return [
+            Period(el, self.base_url)
+            for el in self._root.findall("mpd:Period", NAMESPACES)
+        ]
 
     def get_content_period(self) -> Period:
         """Logica 'magica' para encontrar el contenido real."""
