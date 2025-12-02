@@ -1,17 +1,18 @@
 import logging
 from datetime import datetime, timedelta
-from typing import List, Tuple
+from typing import List, Optional, Tuple
 
 import requests
+from git import Union
 from unidecode import unidecode
 
 from ditupy.schemas.bundle_item import BundleItem
-from ditupy.schemas.collection import Collection
 from ditupy.schemas.common import ChannelInfo
-from ditupy.schemas.dashmanifest_response import DashManifestResponse
+from ditupy.schemas.content_detail import ContentDetail
+from ditupy.schemas.dashmanifest_response import ApiResponse
 from ditupy.schemas.raw_schedule_response import RawTVScheduleResponse
 from ditupy.schemas.simple_schedule import CurrentSchedule, SimpleSchedule
-from docs.requests.utils import save_api_response
+from ditupy.schemas.types import ContentSubType, ContentType, Manifest
 
 logger = logging.getLogger(__name__)
 
@@ -140,8 +141,8 @@ class DituClient:
         resp = self.session.get(url)
         resp.raise_for_status()
 
-        data: DashManifestResponse = resp.json()
-        return data["resultObj"]["src"]
+        response: ApiResponse = ApiResponse(**resp.json())
+        return response.resultObj["src"]
 
     def _parse_program_item(self, item: dict) -> SimpleSchedule:
         """Convierte el item crudo al Schema SimpleSchedule."""
@@ -160,111 +161,157 @@ class DituClient:
             channel_info=item["channel"],
         )
 
-    # def get_catalog_iterator(self) -> Iterator[CatalogItem]:
-    #     """
-    #     Iterador perezoso (Lazy) del catálogo.
-    #     """
-    #     page_url = f"{self.BASE_URL}/PAGE/402"
-    #     logger.info(f"Obteniendo página principal del catálogo: {page_url}")
-
-    #     resp = self.session.get(page_url)
-    #     resp.raise_for_status()
-    #     page_data = resp.json()
-
-    #     containers: List[dict] = page_data.get("resultObj", {}).get("containers", [])
-
-    #     for tray in containers:
-    #         tray_id = tray.get("id")
-    #         uri = tray.get("retrieveItems", {}).get("uri")  # '/TRAY/EXTCOLLECTION/491'
-    #         if not uri:
-    #             continue
-
-    #         # TODO: implementar la pagina de filtrado de catálogo
-    #         # layout = tray.get("layout")
-
-    #         collection_url = f"{self.BASE_URL}{uri}"
-    #         try:
-    #             col_resp = self.session.get(collection_url)
-    #             col_resp.raise_for_status()
-    #             col_data = col_resp.json()
-    #         except Exception as e:
-    #             logger.error(f"Error obteniendo colección {tray_id}: {e}")
-    #             continue
-
-    #         items = col_data.get("resultObj", {}).get("containers", [])
-
-    #         for item in items:
-    #             meta = item.get("metadata", {})
-    #             uri = item.get("retrieveItems", {}).get("uri", "")
-    #             if not uri:
-    #                 raise ValueError(f"Item sin URI en colección {tray_id}")
-
-    #             catalog_item = CatalogItem(
-    #                 contentId=meta.get("contentId"),
-    #                 title=meta.get("title"),
-    #                 description=meta.get("longDescription")
-    #                 or meta.get("shortDescription"),
-    #                 duration=meta.get("duration"),
-    #                 episodeId=meta.get("episodeId"),
-    #                 episodeTitle=meta.get("episodeTitle"),
-    #                 season=meta.get("season"),
-    #                 source_collection_id=str(tray_id),
-    #                 uri=uri,
-    #             )
-
-    #             yield catalog_item
-
-    def get_collections(self) -> List[Collection]:
+    def get_content_details(
+        self, content_id: str, content_type: ContentType
+    ) -> ContentDetail:
         """
-        Obtiene las colecciones disponibles en la página principal del catálogo.
+        Obtiene el detalle de un contenido directamente por ID, sin navegar menús.
+        Ruta: /CONTENT/DETAIL/{type}/{id}
         """
-        page_url = f"{self.BASE_URL}/PAGE/402"
-        resp = self.session.get(page_url)
+        url = f"{self.BASE_URL}/CONTENT/DETAIL/{content_type.value}/{content_id}"
+        resp = self.session.get(url)
         resp.raise_for_status()
-        page_data = resp.json()
 
-        collections = []
-        for tray in page_data.get("resultObj", {}).get("containers", []):
-            collections.append(Collection(**tray))
-        return collections
+        response = ApiResponse(**resp.json())
+        containers = response.resultObj.get("containers", [])
+        if not containers:
+            raise ValueError(f"Contenido {content_id} no encontrado.")
 
-    def get_collection(self, collection: Collection) -> List[BundleItem]:
+        return ContentDetail(**containers[0])
+
+    def get_vod_stream(self, content_id: str, asset_id: str) -> Manifest:
         """
-        Obtiene los episodios de una colección específica por su ID.
+        Obtiene la URL del MPD para contenido VOD (Catchup, Episodios, Películas).
+        Ruta: /CONTENT/VIDEOURL/VOD/{content_id}/{asset_id}
         """
-        uri = collection.retrieveItems.uri  # '/TRAY/EXTCOLLECTION/491.json'
-        collection_url = f"{self.BASE_URL}{uri}"
-        resp = self.session.get(collection_url)
-
+        url = f"{self.BASE_URL}/CONTENT/VIDEOURL/VOD/{content_id}/{asset_id}"
+        resp = self.session.get(url)
         resp.raise_for_status()
-        col_data = resp.json()
 
-        items = col_data.get("resultObj", {}).get("containers", [])
-        collections = []
-        for index, item in enumerate(items):
-            layout = item["layout"]
-            logger.debug(
-                "%d - Layout : %s: Item de colección con %d elementos. Campos disponibles: %s",
-                index,
-                layout,
-                len(item),
-                list(item.keys()),
+        response: ApiResponse = ApiResponse(**resp.json())
+        return Manifest(**response.resultObj)
+
+    def get_metadata(
+        self, content_id: Union[int, str], content_type: ContentType
+    ) -> ContentDetail:
+        """
+        Obtiene la ficha técnica completa de un contenido (Serie, Temporada o VOD).
+        """
+        # Endpoint directo: /CONTENT/DETAIL/{TIPO}/{ID}
+        url = f"{self.BASE_URL}/CONTENT/DETAIL/{content_type.value}/{content_id}"
+        resp = self.session.get(url)
+        resp.raise_for_status()
+
+        data = resp.json()
+        containers = data.get("resultObj", {}).get("containers", [])
+
+        if not containers:
+            raise ValueError(f"Contenido {content_id} no encontrado.")
+
+        return ContentDetail(**containers[0])
+
+    def list_children(self, parent_id: str) -> List[BundleItem]:
+        """
+        Obtiene los hijos de un contenedor.
+        - Si parent_id es una SERIE -> Devuelve Temporadas (Bundles).
+        - Si parent_id es una TEMPORADA -> Devuelve Episodios (VODs).
+        """
+        # Usamos el endpoint de búsqueda filtrando por el padre
+        # Nota: Usamos SEARCH/VOD genéricamente, suele funcionar para traer hijos mixtos
+        url = f"{self.BASE_URL}/TRAY/SEARCH/VOD"
+
+        params = {"filter_parentId": parent_id}
+
+        resp = self.session.get(url, params=params)
+        resp.raise_for_status()
+
+        items = resp.json().get("resultObj", {}).get("containers", [])
+
+        return [BundleItem(**item) for item in items]
+
+    def get_stream_url(self, content_id: Union[str, int]) -> Manifest:
+        """
+        Obtiene la URL del MPD lista para reproducir un VOD.
+        Hace la magia de buscar el Asset ID automáticamente.
+        """
+
+        detail = self.get_metadata(content_id, ContentType.VOD)
+        if not detail.assets:
+            raise ValueError(
+                f"El contenido {content_id} no tiene assets de video disponibles."
             )
-            collections.append(BundleItem(**item))
-        return collections
 
-    def get_item(self, item: BundleItem) -> dict:
-        """
-        Obtiene el detalle completo de un ítem específico.
-        """
-        if item.retrieveItems:
-            uri = item.retrieveItems.uri  # '/CONTENT/DETAIL/BUNDLE/1500000269.json'
-            item_url = f"{self.BASE_URL}{uri}"
-        else:
-            uri = item.actions[0].uri  # '/PAGE/DETAILS/VOD/1000008821.json'
-            item_url = f"{self.BASE_URL}{uri}"
+        # 2. Buscamos el asset tipo 'MASTER' (el principal)
+        # Podríamos filtrar también por videoType="HD" si fuera necesario
+        # Nota: 'detail.assets' contiene tambien el Trailer.
+        master_asset = next((a for a in detail.assets if a.assetType == "MASTER"), None)
 
-        resp = self.session.get(item_url)
-        save_api_response(item_url, resp.json())
+        if not master_asset:
+            raise ValueError(
+                f"No se encontró un asset MASTER para el contenido {content_id}"
+            )
+
+        logger.info(
+            f"Asset encontrado: {master_asset.assetName} (ID: {master_asset.assetId})"
+        )
+        return self._fetch_vod_manifest(content_id, master_asset.assetId)
+
+    def get_episodes(self, serie_id: str) -> List[BundleItem]:
+        """Alias de list_children para Temporadas."""
+        return self.list_children(serie_id)
+
+    def _fetch_vod_manifest(
+        self, content_id: Union[str, int], asset_id: Union[str, int]
+    ) -> Manifest:
+        """Obtiene la URL final del MPD."""
+        url = f"{self.BASE_URL}/CONTENT/VIDEOURL/VOD/{content_id}/{asset_id}"
+        resp = self.session.get(url)
         resp.raise_for_status()
-        return resp.json()
+        response = ApiResponse(**resp.json())
+        return Manifest(**response.resultObj)
+
+    def get_movies(self) -> List[BundleItem]:
+        return self.search_content(content_subtype=ContentSubType.MOVIE)
+
+    def get_series(self) -> List[BundleItem]:
+        return self.search_content(content_subtype=ContentSubType.SERIE)
+
+    def get_soap_operas(self) -> List[BundleItem]:
+        return self.search_content(content_subtype=ContentSubType.SOAP_OPERA)
+
+    def search_content(
+        self,
+        parent_id: Optional[str] = None,
+        content_type: Optional[ContentType] = None,
+        content_subtype: Optional[ContentSubType] = None,
+    ) -> List[BundleItem]:
+        """
+        Busca contenido usando un solo filtro activo por llamada.
+
+        Prioridad de filtros:
+            1. parent_id — si se especifica, ignora los demás.
+            2. content_type — si se especifica, ignora los demás.
+            3. content_subtype — si se especifica, ignora los demás.
+
+        Si no se especifica ninguno, usa GROUP_OF_BUNDLES por defecto.
+        """
+        url = f"{self.BASE_URL}/TRAY/SEARCH/VOD"
+
+        params = {}
+        if parent_id:
+            params["filter_parentId"] = parent_id
+            params["filter_contentType"] = (
+                "VOD"  # Hijos de un padre siempre son VODs (creo)
+            )
+        elif content_type:
+            params["filter_contentType"] = content_type.value
+        elif content_subtype:
+            params["filter_contentSubtype"] = content_subtype.value
+        else:
+            params["filter_contentType"] = ContentType.GROUP_OF_BUNDLES.value
+
+        resp = self.session.get(url, params=params)
+        resp.raise_for_status()
+
+        items = resp.json().get("resultObj", {}).get("containers", [])
+        return [BundleItem(**item) for item in items]

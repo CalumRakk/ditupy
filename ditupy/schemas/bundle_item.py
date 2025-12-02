@@ -20,7 +20,7 @@ class Metadata(BaseModel):
     longDescription: str
     title: str
     season: Optional[int] = None
-    contentSubtype: Literal["SOAP_OPERA", "SEASON", "MOVIE", "SERIE"]
+    contentSubtype: Literal["SOAP_OPERA", "SEASON", "MOVIE", "SERIE", "EPISODE"]
     genres: list[str]
 
     model_config = {"extra": "allow"}

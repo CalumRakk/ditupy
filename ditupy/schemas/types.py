@@ -1,3 +1,27 @@
+from enum import Enum
+
+from pydantic import BaseModel
+
+
+class ContentType(str, Enum):
+    VOD = "VOD"  # Episodios, Películas
+    BUNDLE = "BUNDLE"  # Temporadas
+    GROUP_OF_BUNDLES = "GROUP_OF_BUNDLES"  # Series / Programas
+
+
+class ContentSubType(str, Enum):
+    SERIE = "SERIE"
+    SEASON = "SEASON"
+    EPISODE = "EPISODE"
+    MOVIE = "MOVIE"
+    SOAP_OPERA = "SOAP_OPERA"
+
+
+class Manifest(BaseModel):
+    src: str
+    token: str
+
+
 # from typing import List, Optional
 
 # from pydantic import BaseModel

@@ -1,14 +1,9 @@
-from typing import TypedDict
+from pydantic import BaseModel
 
 
-class ResultObjDash(TypedDict):
-    src: str
-    token: str
-
-
-class DashManifestResponse(TypedDict):
+class ApiResponse(BaseModel):
     resultCode: str
     message: str
     errorDescription: str
-    resultObj: ResultObjDash
+    resultObj: dict
     systemTime: int
