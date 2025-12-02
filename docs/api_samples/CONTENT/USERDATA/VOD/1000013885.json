@@ -1,0 +1,28 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 1,
+    "containers": [
+      {
+        "id": "1000013885",
+        "layout": "CONTENT_ITEM",
+        "metadata": {},
+        "entitlement": {
+          "isContentOOHBlocked": false,
+          "assets": [
+            {
+              "assetId": 179491,
+              "videoType": "HD",
+              "assetType": "MASTER",
+              "assetName": "VOD_HD",
+              "rights": "watch"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "systemTime": 1764599654770
+}

@@ -1,0 +1,10 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "src": "https://vod.avscaracoltv.com/out/v1/2c55e39d3add4904a1fac8f3fa9e4a72/979e721d103a414fa81aa000bd40cd65/f1ff0fc75b154bc6b1830a8d39517255/index.mpd",
+    "token": "EYrr8RllvyQV5m6sDk0M+5yDUPs6xLC3LhK56tgqKbv0FbyEdTWEoyCFF6vNjHrbYLGwBYzDNJLQQY+o1w/v6adiod7l2XyM9OD7/Gz1QII79GehYWOraWkrGmvC0PsQK/Fg/6SGG00RoDLkH0s0eGFn9gihmCtBlWYHEPyIEEiu/38GE2PxnRFxVG7j389Vv6lGls/aPArwFVd6uDzKcoitbtIG+Rduu4xiXMwtHXi9rPHocl7YUBitTbiTh6zBDuO9Gk5XjlecglyfZBwqVzJnZzybC9KA4sjeP/3AYUvFumMvuxDe/5/ITvSIn+gEkE1Yzz8K+u/gl4tDDBRtTzxde897xkaJGwqJNFY1gd40uaeGbgLgCaoUGaQDAY+R4E260fd6vrc/mQ0XgB6Gb6fqgqgBvbeiB+7xosmdSddLM8ilZnOUn4pEhL6JIIpEc1X8qoBFzOzUOQWusPUBOw=="
+  },
+  "systemTime": 1764599730720
+}

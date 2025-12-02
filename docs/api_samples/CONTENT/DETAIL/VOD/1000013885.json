@@ -1,0 +1,168 @@
+{
+  "resultCode": "OK",
+  "message": "",
+  "errorDescription": "200-10000",
+  "resultObj": {
+    "total": 1,
+    "containers": [
+      {
+        "id": "1000013885",
+        "layout": "CONTENT_ITEM",
+        "metadata": {
+          "contentId": 1000013885,
+          "contentType": "VOD",
+          "longDescription": "En el Desafío Siglo XXI, Alpha, Neos y Gamma se exigen al máximo para esquivar los chalecos en este ciclo 18.",
+          "year": "2025",
+          "contractStartDate": 1764041535000,
+          "contractEndDate": 1764646320000,
+          "externalId": "CATCH69251b9dc9ddafab50002746",
+          "title": "Desafío Siglo XXI - Capítulos de la Semana",
+          "duration": 4030,
+          "contentSubtype": "EPISODE",
+          "popularity": {
+            "KPI": 1,
+            "Boost": 1
+          },
+          "starRating": 0,
+          "pictureUrl": "catchup/69251b9dc9ddafab50002746",
+          "language": "SPA",
+          "season": 2025,
+          "episodeNumber": 98,
+          "episodeTitle": "24-Nov 2025",
+          "isGeoBlocked": false,
+          "pcLevel": 0,
+          "pcExtendedRatings": [
+            "AP"
+          ],
+          "isCopyProtected": true,
+          "copyProtections": [
+            {
+              "securityCode": "01",
+              "securityOption": "00000010"
+            },
+            {
+              "securityCode": "03",
+              "securityOption": "00000001"
+            },
+            {
+              "securityCode": "05",
+              "securityOption": "00000001"
+            }
+          ],
+          "actors": [
+            "No definido"
+          ],
+          "authors": [
+            "No definido"
+          ],
+          "directors": [
+            "No definido"
+          ],
+          "genres": [
+            "Aventura",
+            "Reality",
+            "Catchup"
+          ],
+          "availableAlso": [
+            "ROKU",
+            "ANDROID_TABLET",
+            "WEB",
+            "FIRETV",
+            "IPAD",
+            "IOS",
+            "SAMSUNGTV",
+            "ANDROIDTV",
+            "LGTV",
+            "VIDAA"
+          ],
+          "advertisingInfoList": [
+            {
+              "advertisingContentId": "1",
+              "networkID": "1",
+              "cuePointList": [
+                {
+                  "customSlotId": "",
+                  "sequence": 0,
+                  "timePositionClass": "PREROLL",
+                  "contentEndTimePosition": 0,
+                  "adFormat": "CLEAN",
+                  "timeToNextAdUnit": 0,
+                  "contentTimePosition": 0
+                },
+                {
+                  "customSlotId": "",
+                  "sequence": 1,
+                  "timePositionClass": "MIDROLL",
+                  "contentEndTimePosition": 0,
+                  "adFormat": "CLEAN",
+                  "timeToNextAdUnit": 0,
+                  "contentTimePosition": 1380
+                },
+                {
+                  "customSlotId": "",
+                  "sequence": 2,
+                  "timePositionClass": "MIDROLL",
+                  "contentEndTimePosition": 0,
+                  "adFormat": "CLEAN",
+                  "timeToNextAdUnit": 0,
+                  "contentTimePosition": 2460
+                },
+                {
+                  "customSlotId": "",
+                  "sequence": 3,
+                  "timePositionClass": "MIDROLL",
+                  "contentEndTimePosition": 0,
+                  "adFormat": "CLEAN",
+                  "timeToNextAdUnit": 0,
+                  "contentTimePosition": 3240
+                }
+              ]
+            }
+          ],
+          "contentOptions": [],
+          "extendedMetadata": {
+            "vodDescriptionFormat": [
+              "EPISODE_NUMBER",
+              "EPISODE_NAME"
+            ],
+            "tagValue": "Reality"
+          },
+          "recentlyAdded": false,
+          "emfAttributes": {
+            "vodADTAGUrl": "https://pubads.g.doubleclick.net/gampad/ads?iu=/100249493/Ditu/VOD/Catchup/Catchup-Entretenimiento-Prime-Time&description_url=https%3A%2F%2Fditutv.lat%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&vpmute=1&plcmt=1&ad_rule=0&impl=s&correlator="
+          },
+          "comingSoon": false,
+          "leavingSoon": true
+        },
+        "assets": [
+          {
+            "assetId": 179491,
+            "assetType": "MASTER",
+            "assetName": "VOD_HD",
+            "videoType": "HD",
+            "audioLanguages": [
+              {
+                "audioId": 1,
+                "audioLanguageName": "SPA",
+                "isPreferred": false
+              }
+            ]
+          }
+        ],
+        "parents": [
+          {
+            "parentId": 1500000269,
+            "parentType": "BUNDLE",
+            "parentSubType": "SEASON"
+          },
+          {
+            "parentId": 1700000057,
+            "parentType": "GROUP_OF_BUNDLES",
+            "parentSubType": "SERIE"
+          }
+        ]
+      }
+    ]
+  },
+  "systemTime": 1764597022296
+}
