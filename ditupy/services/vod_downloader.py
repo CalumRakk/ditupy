@@ -1,4 +1,3 @@
-import json
 import logging
 from pathlib import Path
 from typing import Union
@@ -6,7 +5,7 @@ from typing import Union
 import requests
 
 from ditupy.dash import DashManifest
-from ditupy.schemas.types import Manifest
+from ditupy.schemas.types import DRMInfo, Manifest
 from ditupy.services.downloader import SegmentDownloader
 
 logger = logging.getLogger(__name__)
@@ -28,7 +27,7 @@ class VodDownloader:
         self.manifest_data = manifest
         self.downloader = SegmentDownloader(self.output_path, max_workers=8)
 
-    def _save_metadata(self, xml_content: str):
+    def _save_metadata(self, xml_content: str, pssh):
         """
         Guarda los datos necesarios trabajar con el DRM.
         """
@@ -38,18 +37,15 @@ class VodDownloader:
         mpd_path.write_text(xml_content, encoding="utf-8")
         logger.info(f"Manifiesto guardado en: {mpd_path}")
 
-        # Guardar Token y URL del servidor de licencias
-        # TODO: conseguir la URL del servidor de licencias y guardarla junto aqui. Esta suele ser estatica.
-        meta_data = {
-            "manifest_url": self.manifest_data.src,
-            "token": self.manifest_data.token,
-            "license_type": "com.widevine.alpha",
-            "license_url": "",
-        }
-
+        meta_data = DRMInfo(
+            manifest_url=self.manifest_data.src,
+            token=self.manifest_data.token,
+            cookies=self.manifest_data.cookies,
+            pssh_widevine=pssh,
+        )
         meta_path = self.output_path / "drm_info.json"
-        with open(meta_path, "w", encoding="utf-8") as f:
-            json.dump(meta_data, f, indent=4)
+        dump_json = meta_data.model_dump_json(indent=4)
+        meta_path.write_text(dump_json, encoding="utf-8")
 
         logger.info(f"Metadatos DRM guardados en: {meta_path}")
 
@@ -71,10 +67,7 @@ class VodDownloader:
             logger.error(f"Error fatal obteniendo manifiesto: {e}")
             raise e
 
-        logger.info(f"--- PASO 2: Persistencia de Metadatos DRM ---")
-        self._save_metadata(xml_content)
-
-        logger.info(f"--- PASO 3: Análisis DASH y Selección ---")
+        logger.info(f"--- Análisis DASH y Selección ---")
         dash = DashManifest(xml_content, source_url=self.manifest_data.src)
         period = dash.get_content_period()
 
@@ -95,7 +88,17 @@ class VodDownloader:
             logger.error(msg)
             raise ValueError(msg)
 
-        logger.info(f"--- PASO 4: Descarga de Segmentos ---")
+        logger.info(f"--- Persistencia de Metadatos DRM ---")
+
+        protection_widevine = [
+            i
+            for i in video_rep.get_content_protections()
+            if "edef8ba9" in i.scheme_id_uri.lower()
+        ][0]
+
+        self._save_metadata(xml_content, protection_widevine.pssh)
+
+        logger.info(f"--- Descarga de Segmentos ---")
 
         # Descargar inits
         logger.info("Descargando segmentos de inicialización (init.mp4)...")

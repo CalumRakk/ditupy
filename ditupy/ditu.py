@@ -13,6 +13,7 @@ from ditupy.schemas.dashmanifest_response import ApiResponse
 from ditupy.schemas.raw_schedule_response import RawTVScheduleResponse
 from ditupy.schemas.simple_schedule import CurrentSchedule, SimpleSchedule
 from ditupy.schemas.types import ContentSubType, ContentType, Manifest
+from ditupy.utils import cookies_to_requests
 
 logger = logging.getLogger(__name__)
 
@@ -272,6 +273,11 @@ class DituClient:
         resp = self.session.get(url)
         resp.raise_for_status()
         response = ApiResponse(**resp.json())
+        raw_set_cookies = resp.headers.get("set-cookie", "")
+        if not raw_set_cookies:
+            raise ValueError("No se encontraron cookies en la respuesta.")
+
+        response.resultObj["cookies"] = cookies_to_requests(raw_set_cookies)
         return Manifest(**response.resultObj)
 
     def get_movies(self) -> List[BundleItem]:

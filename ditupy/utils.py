@@ -1,8 +1,28 @@
 import logging
 import re
 from time import sleep
+from typing import Dict
+from urllib.parse import unquote
 
 logger = logging.getLogger(__name__)
+
+
+def cookies_to_requests(raw: str, unquote_value=True) -> Dict[str, str]:
+    """
+    Convierte un header Cookie o Set-Cookie en un dict simple para requests. Esto implica unquote de los valores.
+
+    Args:
+        unquote_value (bool, optional): Decodificar los valores con unquote. Defaults to True.
+    """
+    cookies = {}
+    # Dividir por coma solo cuando empieza una nueva cookie (key=...)
+    parts = [p.strip() for p in raw.split(",")]
+    for part in parts:
+        segments = [s.strip() for s in part.split(";")]
+        if "=" in segments[0]:
+            name, value = segments[0].split("=", 1)
+            cookies[name] = unquote(value) if unquote_value else value  # decodifica %xx
+    return cookies
 
 
 def normalize_windows_name(name: str) -> str:

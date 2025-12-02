@@ -36,4 +36,6 @@ digest.txt
 test2.py
 .venv-1
 *.tmp
-/downloads
+downloads/
+*.mp4
+dumper-main/

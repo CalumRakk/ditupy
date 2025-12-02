@@ -17,9 +17,22 @@ class ContentSubType(str, Enum):
     SOAP_OPERA = "SOAP_OPERA"
 
 
+class Cookies(BaseModel):
+    playback_token: str
+    sessionId: str
+
+
 class Manifest(BaseModel):
     src: str
     token: str
+    cookies: Cookies
+
+
+class DRMInfo(BaseModel):
+    manifest_url: str
+    token: str
+    cookies: Cookies
+    pssh_widevine: str
 
 
 # from typing import List, Optional

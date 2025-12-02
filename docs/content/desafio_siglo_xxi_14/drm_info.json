@@ -1,0 +1,9 @@
+{
+    "manifest_url": "https://vod.avscaracoltv.com/out/v1/0a9383b9319447cd8fd7e72ceacc3e09/979e721d103a414fa81aa000bd40cd65/f1ff0fc75b154bc6b1830a8d39517255/index.mpd",
+    "token": "EYrr8RllvyQV5m6sDk0M+5yDUPs6xLC3LhK56tgqKbv0FbyEdTWEoyCFF6vNjHnbabe7DIvCO5LQQY+o1w/v6adiod7l2XyM9OD7/Gz1QII79GShaGWgYG4qFWvC0PsQK/Fg/6SHEEMRoTLkH0s0eGFn9gihmCtHljIAF6DdQESrqisGRGKmnhJwVGbi355Q5KlCk8eIbgrzQ1B2vz+XcI6satcG+khh495rUc0tQSzq/vW8IQ6MARivGryXg/nHAra+HktX0FfNgwmeb0otU2FmYjibCIDV7sjeP/3AYUvFumMvuxDe/5/ITvSIn+gEkE1Yzz8K+u/gl4tDDBRtTzxde897xkaJGwqJNFY1gd40uaeHZQzgCKoUGaQDAY+R4E260fd6vrc/mQ0XgB6Gb6fqgqgBvbeiB+7xosmdSddLM8ilZnOUn4pEhL6JIIpEhBlc5kqg4XbNnaJmwy4y5w==",
+    "cookies": {
+        "playback_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0Rvd25sb2FkIjoiIiwiY2hhbm5lbCI6IkFORFJPSUQiLCJjcElkIjo0Njk0NSwidXNlcm5hbWUiOiJHVUVTVCIsImRldmljZUlkIjoiIiwiY29udGVudElkIjoiMTAwMDAwODY4NCIsImNvbnRlbnRUeXBlIjoiVk9EIiwidmlkZW9UeXBlIjoiSEQiLCJLSUQiOiIyNjFiYWVmZDUwZDY0Y2I1YjdjNzA5MDJmODk2YTEwZHw2Y2I1MzU5NDc3YTY0Nzk2YWExNGQ4OGE1NjI1NzIyZnwwM2U0ZjYwOTAxNzI0ZmMwODc3M2YxNGFkY2U1YjdhNSIsInRpbWVzdGFtcCI6MTc2NDY5MDE4OTAwNiwiaWF0IjoxNzY0NjkwMTg5LCJleHAiOjE3NjQ3MDA5ODl9.LKmycuOuc_-vX2tdr1T0V2yUUx7d7fgBww1zqivK09g",
+        "sessionId": "241a5ea7-76cc-2855-3b8c-9394b8b777e0"
+    },
+    "pssh_widevine": "AAAAQ3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACMIARIQbLU1lHemR5aqFNiKViVyLxoKaW50ZXJ0cnVzdCIBKg=="
+}
