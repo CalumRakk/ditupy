@@ -136,7 +136,7 @@ class DituClient:
         except (IndexError, KeyError):
             raise ValueError(f"No hay información en vivo para el canal {channel_id}")
 
-    def get_manifest_url(self, channel_id: int) -> str:
+    def get_stream_url_url(self, channel_id: int) -> str:
         """Obtiene la URL del MPD para ver en vivo."""
         url = f"{self.BASE_URL}/CONTENT/VIDEOURL/LIVE/{channel_id}/10"
         resp = self.session.get(url)
@@ -232,12 +232,15 @@ class DituClient:
 
     def get_stream_url(self, content_id: Union[str, int]) -> Manifest:
         """
-        Obtiene la URL del MPD lista para reproducir un VOD.
+        Obtiene El MPD lista para reproducir un VOD.
         Hace la magia de buscar el Asset ID automáticamente.
         """
+        # FIX : Corregir la logica esta funcion y el dato que devuelve.
+        # 1. No obtiene la URL
+        # 2. 'Manifest' es ambiguo, se podria entender que es un dato del MPD. En realidad es un schema custom.
         logger.info(f"Iniciando búsqueda de flujo para ContentID: {content_id}")
 
-        detail = self.get_metadata(content_id, ContentType.VOD)
+        detail = self.get_metadata(content_id, ContentType.VOD)  # 48506
         if not detail.assets:
             logger.error(f"El contenido {content_id} no retornó lista de assets.")
             raise ValueError(

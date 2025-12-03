@@ -1,122 +1,136 @@
 import logging
 from pathlib import Path
-from typing import Union
+from typing import Optional
 
 import requests
 
-from ditupy.dash import DashManifest
-from ditupy.schemas.types import DRMInfo, Manifest
+from ditupy.dash import DashManifest, Representation
+from ditupy.schemas.types import DRMInfo, Manifest, StreamInfo
 from ditupy.services.downloader import SegmentDownloader
 
 logger = logging.getLogger(__name__)
 
 
 class VodDownloader:
-    def __init__(
-        self,
-        manifest: Manifest,
-        output_path: Union[Path, str],
-    ):
+    def __init__(self, manifest: Manifest):
         """
         :param manifest: Objeto Manifest obtenido de client.get_stream_url()
         :param output_path: Ruta base donde se guardará el contenido
         """
-        self.output_path = (
-            Path(output_path) if isinstance(output_path, str) else output_path
-        )
         self.manifest_data = manifest
-        self.downloader = SegmentDownloader(self.output_path, max_workers=8)
 
-    def _save_metadata(self, xml_content: str, pssh):
+        # Estado interno para no parsear dos veces
+        self._dash: Optional[DashManifest] = None
+        self._video_rep: Optional[Representation] = None
+        self._audio_rep: Optional[Representation] = None
+        self._xml_content: Optional[str] = None
+        self._pssh: Optional[str] = None
+
+    def extract_info(self) -> StreamInfo:
+        """
+        Descarga el manifiesto, lo analiza y selecciona las mejores pistas y devuelve StreamInfo.
+        """
+        logger.info(f"--- Analizando Manifiesto ---")
+
+        if not self._xml_content:
+            resp = requests.get(self.manifest_data.src)
+            resp.raise_for_status()
+            self._xml_content = resp.text
+
+        self._dash = DashManifest(self._xml_content, source_url=self.manifest_data.src)
+        period = self._dash.get_content_period()
+
+        video_sets = period.get_adaptation_sets(type_filter="video")
+        audio_sets = period.get_adaptation_sets(type_filter="audio")
+        if not video_sets or not audio_sets:
+            raise ValueError("El manifiesto no contiene pistas válidas.")
+
+        self._video_rep = video_sets[0].get_best_representation()
+        self._audio_rep = audio_sets[0].get_best_representation()
+        if not self._video_rep or not self._audio_rep:
+            raise ValueError("Fallo seleccionando calidades.")
+
+        protection_widevine = [
+            i
+            for i in self._video_rep.get_content_protections()
+            if "edef8ba9" in i.scheme_id_uri.lower()
+        ]
+        if not protection_widevine:
+            # Intentar buscar en el AdaptationSet si no está en la Representation
+            protection_widevine = [
+                i
+                for i in video_sets[0].get_content_protections()
+                if "edef8ba9" in i.scheme_id_uri.lower()
+            ]
+
+        if protection_widevine:
+            self._pssh = protection_widevine[0].pssh
+        else:
+            logger.warning(
+                "No se encontró PSSH de Widevine. El video no se podrá reproducir."
+            )
+            self._pssh = ""
+
+        logger.info(
+            f"Calidad seleccionada: {self._video_rep.height}p ({self._video_rep.bandwidth} bps)"
+        )
+
+        return StreamInfo(
+            height=self._video_rep.height if self._video_rep.height else 0,
+            width=self._video_rep.width,
+            duration=self._dash.duration_seconds,
+            pssh=self._pssh,
+        )
+
+    def _save_metadata(self, output_path: Path):
         """
         Guarda los datos necesarios trabajar con el DRM.
         """
         # Guardar el Manifiesto crudo (.mpd)
         # Es necesario para extraer el PSSH.
-        mpd_path = self.output_path / "manifest.mpd"
-        mpd_path.write_text(xml_content, encoding="utf-8")
-        logger.info(f"Manifiesto guardado en: {mpd_path}")
+        mpd_path = output_path / "manifest.mpd"
+        mpd_path.write_text(self._xml_content, encoding="utf-8")  # type: ignore
 
         meta_data = DRMInfo(
             manifest_url=self.manifest_data.src,
             token=self.manifest_data.token,
             cookies=self.manifest_data.cookies,
-            pssh_widevine=pssh,
+            pssh_widevine=self._pssh if self._pssh else "",
         )
-        meta_path = self.output_path / "drm_info.json"
-        dump_json = meta_data.model_dump_json(indent=4)
-        meta_path.write_text(dump_json, encoding="utf-8")
+        meta_path = output_path / "drm_info.json"
+        meta_path.write_text(meta_data.model_dump_json(indent=4), encoding="utf-8")
 
         logger.info(f"Metadatos DRM guardados en: {meta_path}")
 
-    def download(self) -> tuple[Path, float]:
-        self.output_path.mkdir(parents=True, exist_ok=True)
+    def download(self, output_path: Path):
+        """
+        Ejecuta la descarga física de los segmentos.
+        Requiere que extract_info() se haya ejecutado antes (o lo ejecuta si no).
+        """
+        output_path = Path(output_path)
+        output_path.mkdir(parents=True, exist_ok=True)
 
-        logger.info(f"--- PASO 1: Obtención del Manifiesto ---")
-        logger.info(f"URL: {self.manifest_data.src}")
+        if not self._video_rep:
+            self.extract_info()
 
-        try:
-            resp = requests.get(self.manifest_data.src)
-            resp.raise_for_status()
-            xml_content = resp.text
-            logger.debug(
-                "Manifiesto descargado correctamente (tamaño: %d bytes)",
-                len(xml_content),
-            )
-        except Exception as e:
-            logger.error(f"Error fatal obteniendo manifiesto: {e}")
-            raise e
+        # # TODO: Comprobar si realmente este acoplamiento es necesario o lo inyectamos en el constructor
+        seg_downloader = SegmentDownloader(output_path, max_workers=8)
 
-        logger.info(f"--- Análisis DASH y Selección ---")
-        dash = DashManifest(xml_content, source_url=self.manifest_data.src)
-        expected_duration = dash.duration_seconds
-        period = dash.get_content_period()
+        logger.info(f"--- Guardando Metadatos ---")
+        self._save_metadata(output_path)
 
-        # Seleccionar mejores representaciones
-        video_sets = period.get_adaptation_sets(type_filter="video")
-        audio_sets = period.get_adaptation_sets(type_filter="audio")
-
-        if not video_sets or not audio_sets:
-            msg = "El manifiesto no contiene pistas de video o audio válidas."
-            logger.error(msg)
-            raise ValueError(msg)
-
-        video_rep = video_sets[0].get_best_representation()
-        audio_rep = audio_sets[0].get_best_representation()
-
-        if not audio_rep or not video_rep:
-            msg = "Fallo en la selección de representaciones."
-            logger.error(msg)
-            raise ValueError(msg)
-
-        logger.info(f"--- Persistencia de Metadatos DRM ---")
-
-        protection_widevine = [
-            i
-            for i in video_rep.get_content_protections()
-            if "edef8ba9" in i.scheme_id_uri.lower()
-        ][0]
-
-        self._save_metadata(xml_content, protection_widevine.pssh)
-
-        logger.info(f"--- Descarga de Segmentos ---")
+        logger.info(f"--- Descargando Segmentos en: {output_path} ---")
 
         # Descargar inits
-        logger.info("Descargando segmentos de inicialización (init.mp4)...")
-        self.downloader.download_file(video_rep.initialization_url, "video")
-        self.downloader.download_file(audio_rep.initialization_url, "audio")
+        seg_downloader.download_file(self._video_rep.initialization_url, "video")  # type: ignore
+        seg_downloader.download_file(self._audio_rep.initialization_url, "audio")  # type: ignore
 
         # Descargar segmentos
-        video_segments = video_rep.get_segments()
-        audio_segments = audio_rep.get_segments()
+        video_segments = self._video_rep.get_segments()  # type: ignore
+        audio_segments = self._audio_rep.get_segments()  # type: ignore
 
         logger.info(
-            f"Cola de descarga: Video ({len(video_segments)} segmentos) + Audio ({len(audio_segments)} segmentos)"
+            f"Cola: Video ({len(video_segments)}) + Audio ({len(audio_segments)})"
         )
-
-        self.downloader.download_batch(video_segments, "video")
-        self.downloader.download_batch(audio_segments, "audio")
-
-        logger.info(f"--- PROCESO FINALIZADO ---")
-        logger.info(f"Contenido guardado en: {self.output_path}")
-        return self.output_path, expected_duration
+        seg_downloader.download_batch(video_segments, "video")
+        seg_downloader.download_batch(audio_segments, "audio")

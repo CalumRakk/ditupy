@@ -1,4 +1,5 @@
 from enum import Enum
+from typing import Optional
 
 from pydantic import BaseModel
 
@@ -33,6 +34,13 @@ class DRMInfo(BaseModel):
     token: str
     cookies: Cookies
     pssh_widevine: str
+
+
+class StreamInfo(BaseModel):
+    height: int
+    duration: float
+    width: Optional[int] = None
+    pssh: Optional[str] = None
 
 
 # from typing import List, Optional
