@@ -13,18 +13,29 @@ client = DituClient()
 series = client.get_series()
 device_path = "dumper-main/key_dumps/Android Emulator 5554/private_keys/4464/2137596953"
 for serie in series:
-    if "desafío" in serie.metadata.title.lower():
-        episodes = client.get_episodes(serie_id=serie.id)
+    if "suite" in serie.metadata.title.lower():
+        episodes = [
+            i
+            for i in client.get_episodes(serie_id=serie.id)
+            if i.metadata.contentSubtype == "EPISODE"
+        ]
+        episodes.sort(key=lambda x: x.metadata.episodeNumber)  # type: ignore
         for episode in episodes:
             title = episode.title_slug
             episode_number = episode.metadata.episodeNumber
-            output_path = f"downloads/{title}_{episode_number}"
+            output_path = Path(
+                f"downloads/{title}.{episode.metadata.year}.capitulo.{str(episode_number).zfill(2)}.ditu.720p"
+            )
+            filename = output_path.name + ".mp4"
+            final_file = output_path / filename
+            if final_file.exists():
+                continue
 
             manifest = client.get_stream_url(content_id=episode.metadata.contentId)
             downloader = VodDownloader(manifest=manifest, output_path=output_path)
             processor = PostProcessor(output_path)
 
-            downloader.download()
+            _, expected_duration = downloader.download()
 
             drm_info_path = Path(output_path) / "drm_info.json"
             drm_info = DRMInfo.parse_file(drm_info_path)
@@ -33,8 +44,9 @@ for serie in series:
             keys = license_manager.get_keys(drm_info)
 
             processor = PostProcessor(output_path)
-            filename = f"{title}_{episode_number}.mp4"
             processor.process(filename, keys=keys)
-
-            print(f"Downloaded: {episode.metadata.title}")
-            exit()
+            if processor.verify_integrity(final_file, expected_duration):
+                print(f"Descargado y Verificado: {episode.metadata.title}")
+            else:
+                print(f"WARNING: Descarga incompleta para: {episode.metadata.title}")
+                raise Exception("Descarga incompleta")

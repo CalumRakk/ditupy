@@ -3,6 +3,8 @@ import xml.etree.ElementTree as ET
 from typing import Any, List, Optional
 from urllib.parse import urljoin
 
+from ditupy.utils import parse_iso_duration
+
 logger = logging.getLogger(__name__)
 
 NAMESPACES = {"mpd": "urn:mpeg:dash:schema:mpd:2011", "cenc": "urn:mpeg:cenc:2013"}
@@ -240,6 +242,12 @@ class DashManifest:
 
         self._root = ET.fromstring(xml_content)
         self._source_url = source_url
+
+    @property
+    def duration_seconds(self) -> float:
+        """Retorna la duración total declarada en el MPD en segundos."""
+        duration_str = self._root.get("mediaPresentationDuration", "")
+        return parse_iso_duration(duration_str)
 
     @property
     def base_url(self) -> str:

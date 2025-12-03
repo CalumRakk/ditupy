@@ -173,3 +173,49 @@ class PostProcessor:
         for f in files_to_remove:
             if f and f.exists():
                 f.unlink()
+
+    def _get_actual_duration(self, file_path: Path) -> float:
+        """Obtiene la duración precisa usando ffprobe."""
+        cmd = [
+            "ffprobe",
+            "-v",
+            "error",
+            "-show_entries",
+            "format=duration",
+            "-of",
+            "default=noprint_wrappers=1:nokey=1",
+            str(file_path),
+        ]
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            return float(result.stdout.strip())
+        except (subprocess.CalledProcessError, ValueError):
+            logger.error("No se pudo obtener la duración del archivo.")
+            return 0.0
+
+    def verify_integrity(
+        self, file_path: Path, expected_duration: float, tolerance: float = 5.0
+    ) -> bool:
+        """
+        Compara la duración del archivo con la esperada.
+        :param tolerance: Segundos de diferencia aceptables.
+        """
+        if expected_duration <= 0:
+            logger.warning("Duración esperada inválida, omitiendo verificación.")
+            return True
+
+        actual = self._get_actual_duration(file_path)
+        diff = abs(actual - expected_duration)
+
+        logger.info(
+            f"Integridad: Esperado={expected_duration:.2f}s | Real={actual:.2f}s | Diff={diff:.2f}s"
+        )
+
+        if diff > tolerance:
+            logger.error(
+                f"VERIFICACIÓN FALLIDA: El video está incompleto o corrupto (Faltan ~{diff:.2f}s)"
+            )
+            return False
+
+        logger.info("VERIFICACIÓN EXITOSA: El video está completo.")
+        return True

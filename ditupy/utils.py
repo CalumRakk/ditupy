@@ -7,6 +7,29 @@ from urllib.parse import unquote
 logger = logging.getLogger(__name__)
 
 
+def parse_iso_duration(duration_str: str) -> float:
+    """
+    Parsea una duración ISO 8601 (ej: PT1H2M10.5S) a segundos totales.
+    """
+    if not duration_str:
+        return 0.0
+
+    pattern = re.compile(
+        r"P(?:(?P<days>\d+)D)?T(?:(?P<hours>\d+)H)?(?:(?P<minutes>\d+)M)?(?:(?P<seconds>\d+(?:\.\d+)?)S)?"
+    )
+    match = pattern.match(duration_str)
+    if not match:
+        return 0.0
+
+    data = match.groupdict(default="0")
+    return (
+        int(data["days"]) * 86400
+        + int(data["hours"]) * 3600
+        + int(data["minutes"]) * 60
+        + float(data["seconds"])
+    )
+
+
 def cookies_to_requests(raw: str, unquote_value=True) -> Dict[str, str]:
     """
     Convierte un header Cookie o Set-Cookie en un dict simple para requests. Esto implica unquote de los valores.

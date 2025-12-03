@@ -49,7 +49,7 @@ class VodDownloader:
 
         logger.info(f"Metadatos DRM guardados en: {meta_path}")
 
-    def download(self) -> Path:
+    def download(self) -> tuple[Path, float]:
         self.output_path.mkdir(parents=True, exist_ok=True)
 
         logger.info(f"--- PASO 1: Obtención del Manifiesto ---")
@@ -69,6 +69,7 @@ class VodDownloader:
 
         logger.info(f"--- Análisis DASH y Selección ---")
         dash = DashManifest(xml_content, source_url=self.manifest_data.src)
+        expected_duration = dash.duration_seconds
         period = dash.get_content_period()
 
         # Seleccionar mejores representaciones
@@ -118,4 +119,4 @@ class VodDownloader:
 
         logger.info(f"--- PROCESO FINALIZADO ---")
         logger.info(f"Contenido guardado en: {self.output_path}")
-        return self.output_path
+        return self.output_path, expected_duration
